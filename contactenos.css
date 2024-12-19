@@ -1,0 +1,435 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background: url('img_inicio/obrero.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    position: relative;
+}
+
+/* ====== Header ====== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #fa8c32, #fa6a46);
+    padding: 10px 20px;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo e Información */
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espacio entre la imagen y el texto */
+}
+
+header .logo-image {
+    width: 220px; /* Tamaño ajustado de la imagen */
+    height: auto;
+}
+
+header .logo-text {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+header .sub-text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+/* Input y Menú de Navegación */
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre el input y el menú */
+}
+
+header input[type="text"] {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    width: 200px;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffe8d6;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header input[type="text"] {
+        width: 90%;
+    }
+
+    header .logo {
+        flex-direction: column;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+footer .social-icons a {
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+    color: #f3ff44;
+}
+
+footer .social-icons a:hover {
+    color: #fff;
+}
+/* ====== Sección de Contacto ====== */
+.contact-section {
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('img_inicio/contacto-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 40px 20px;
+}
+
+.contact-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-box h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-box p {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+}
+
+.contact-item i {
+    font-size: 24px;
+    color: #fa6a46;
+}
+
+.contact-item p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.contact-item a {
+    color: #fa6a46;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.map-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.btn-map {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #fa6a46;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-map:hover {
+    background-color: #fa8c32;
+}
+
+/* ====== Responsividad ====== */
+@media (max-width: 768px) {
+    .contact-box {
+        padding: 20px;
+    }
+
+    .contact-box h2 {
+        font-size: 24px;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr; /* Elementos en una sola columna */
+    }
+
+    .map-container iframe {
+        height: 300px;
+    }
+
+    .btn-map {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-box h2 {
+        font-size: 20px;
+    }
+
+    .contact-item i {
+        font-size: 20px;
+    }
+
+    .contact-item p {
+        font-size: 12px;
+    }
+
+    .map-container iframe {
+        height: 250px;
+    }
+
+    .btn-map {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+    header .logo-image {
+        width: 125px; /* Tamaño ajustado de la imagen */
+        height: auto;
+    }
+}
+
+
+
+/* ====== Efecto de Nieve ====== */
+
+/* Contenedor de nieve */
+.snowflakes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Permite interactuar con los elementos debajo */
+    z-index: 9999; /* Asegura que la nieve esté sobre otros elementos */
+    overflow: hidden;
+}
+
+/* Estilos para cada copo de nieve */
+.snowflake {
+    color: #FFF;
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 0 0 1px #000;
+    position: absolute;
+    top: -10%;
+    user-select: none;
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* Animación de caída */
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* ====== Mensaje Flotante Animado ====== */
+
+/* Contenedor del mensaje flotante */
+.floating-message {
+    position: fixed;
+    bottom: 20px; /* Ajusta según preferencia */
+    right: 20px;  /* Ajusta según preferencia */
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 10000; /* Asegura que el mensaje esté sobre la nieve */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Animación de pulso */
+    animation: pulse 2s infinite;
+}
+
+/* Animación de pulso para el cuadro */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(255, 215, 0, 1);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+    }
+}
+
+/* Texto del mensaje con animación de color */
+.floating-message .message-text {
+    background: linear-gradient(45deg, #ff6a00, #ee0979, #00d4ff, #ee0979, #ff6a00);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    background-clip: text; /* Para navegadores modernos */
+    -webkit-text-fill-color: transparent;
+    /* No uses 'text-fill-color' sin prefijo ya que no es estándar */
+    animation: gradientShift 10s ease infinite, textGlow 2s infinite alternate;
+    font-size: 20px; /* Ajusta el tamaño según preferencia */
+    font-weight: bold;
+}
+
+/* Animación para el desplazamiento del gradiente */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Animación para el brillo del texto */
+@keyframes textGlow {
+    from {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    to {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+}
+
+/* ====== Responsividad para el Mensaje Flotante ====== */
+
+@media screen and (max-width: 768px) {
+    .floating-message {
+        bottom: 10px;
+        right: 10px;
+        padding: 15px 20px;
+    }
+
+    .floating-message .message-text {
+        font-size: 16px; /* Ajusta el tamaño del texto en pantallas pequeñas */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .floating-message {
+        bottom: 5px;
+        right: 5px;
+        padding: 10px 15px;
+    }
+
+    .floating-message .message-text {
+        font-size: 14px; /* Ajusta el tamaño del texto en pantallas muy pequeñas */
+    }
+}
+
+/* Clase para ocultar elementos */
+.hidden {
+    display: none !important;
+}
+

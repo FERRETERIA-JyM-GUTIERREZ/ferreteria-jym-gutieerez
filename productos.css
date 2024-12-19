@@ -1,0 +1,685 @@
+/* General */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background: url('img_index/Obrero.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -10;
+}
+/* ====== Header ====== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #fa8c32, #fa6a46);
+    padding: 10px 20px;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo e Información */
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Espacio entre la imagen y el texto */
+}
+
+header .logo-image {
+    width: 220px; /* Tamaño ajustado de la imagen */
+    height: auto;
+}
+
+header .logo-text {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+header .sub-text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #fff;
+}
+
+/* Input y Menú de Navegación */
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre el input y el menú */
+}
+
+header input[type="text"] {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    width: 200px;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffe8d6;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header input[type="text"] {
+        width: 90%;
+    }
+
+    header .logo {
+        flex-direction: column;
+    }
+}
+
+/* Otros estilos como productos, grid, etc., permanecen igual */
+
+/* Footer */
+footer {
+    background-color: rgba(51, 51, 51, 0.9);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-icons a {
+    color: #fffc44;
+    margin: 0 10px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #fff;
+}
+
+/* Sección de Productos */
+.products h2 {
+    font-size: 40px;
+    color: #e9a81e;
+    margin-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    margin-top: 40px;
+}
+
+/* Cargando */
+.loading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #fa6a46;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+#loading-text {
+    font-size: 16px;
+    color: #ddd60c;
+    font-family: 'Poppins', sans-serif;
+}
+
+.success-message {
+    font-size: 18px;
+    color: #28a745;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.success-message.show {
+    opacity: 1;
+    transform: translateY(0);
+    animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+/* Grid de productos */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-item {
+    background-color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item img {
+    width: 180px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-item .product-info {
+    font-size: 14px;
+    color: rgb(42, 46, 255);
+    margin-bottom: 15px;
+}
+
+.product-item .btn {
+    display: inline-block;
+    padding: 20px 30px;
+    background-color: #0f0e0f;
+    color: #dd9819;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.product-item .btn:hover {
+    background-color: #555;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal (opcional si tienes modales) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.modal.show {
+    opacity: 1;
+    display: block;
+}
+
+.modal-content {
+    background: linear-gradient(135deg, #ffffff, #f7f7f7);
+    border-radius: 12px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease-out;
+    opacity: 0;
+}
+
+.modal.show .modal-content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.close {
+    color: #575656;
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.close:hover {
+    color: #f44336;
+    cursor: pointer;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #eb921e;
+    margin-bottom: 10px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: #474747;
+    line-height: 1.6;
+}
+
+strong {
+    color: #fa7132;
+}
+
+.price {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: #4caf50;
+    font-weight: bold;
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    padding: 10px 10px;
+    border: 2px solid #139fac;
+    border-radius: 19px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    width: fit-content;
+    margin: 20px auto 0;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(51, 51, 51, 0.9);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .social-icons a {
+    color: #fffc44;
+    margin: 0 10px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+    color: #fff;
+}
+
+/* Animaciones - ejemplo si lo requieres */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+
+/* ====== Efecto de Nieve ====== */
+
+/* Contenedor de nieve */
+.snowflakes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Permite interactuar con los elementos debajo */
+    z-index: 9999; /* Asegura que la nieve esté sobre otros elementos */
+    overflow: hidden;
+}
+
+/* Estilos para cada copo de nieve */
+.snowflake {
+    color: #FFF;
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 0 0 1px #000;
+    position: absolute;
+    top: -10%;
+    user-select: none;
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* Animación de caída */
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* ====== Mensaje Flotante Animado ====== */
+
+/* Contenedor del mensaje flotante */
+.floating-message {
+    position: fixed;
+    bottom: 20px; /* Ajusta según preferencia */
+    right: 20px;  /* Ajusta según preferencia */
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 10000; /* Asegura que el mensaje esté sobre la nieve */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Animación de pulso */
+    animation: pulse 2s infinite;
+}
+
+/* Animación de pulso para el cuadro */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(255, 215, 0, 1);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+    }
+}
+
+/* Texto del mensaje con animación de color */
+.floating-message .message-text {
+    background: linear-gradient(45deg, #ff6a00, #ee0979, #00d4ff, #ee0979, #ff6a00);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    background-clip: text; /* Para navegadores modernos */
+    -webkit-text-fill-color: transparent;
+    /* No uses 'text-fill-color' sin prefijo ya que no es estándar */
+    animation: gradientShift 10s ease infinite, textGlow 2s infinite alternate;
+    font-size: 20px; /* Ajusta el tamaño según preferencia */
+    font-weight: bold;
+}
+
+/* Animación para el desplazamiento del gradiente */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Animación para el brillo del texto */
+@keyframes textGlow {
+    from {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    to {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+}
+
+/* ====== Responsividad para el Mensaje Flotante ====== */
+
+@media screen and (max-width: 768px) {
+    .floating-message {
+        bottom: 10px;
+        right: 10px;
+        padding: 15px 20px;
+    }
+
+    .floating-message .message-text {
+        font-size: 16px; /* Ajusta el tamaño del texto en pantallas pequeñas */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .floating-message {
+        bottom: 5px;
+        right: 5px;
+        padding: 10px 15px;
+    }
+
+    .floating-message .message-text {
+        font-size: 14px; /* Ajusta el tamaño del texto en pantallas muy pequeñas */
+    }
+}
+
+/* Clase para ocultar elementos */
+.hidden {
+    display: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsividad */
+
+/* Tablets grandes y pequeñas */
+@media screen and (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .logo-image {
+        width: 250px;
+    }
+
+    header nav ul {
+        gap: 10px;
+    }
+
+    .products h2 {
+        font-size: 36px;
+    }
+
+    /* A 1024px ya reducimos a 2 columnas */
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* De 509px a 1000px, también 3 imágenes */
+@media (min-width: 509px) and (max-width: 1000px) {
+    .product-grid {
+        padding: 5px;
+        gap: 5px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .product-item {
+        padding: 5px;
+        max-width: 140px;
+        margin: 0 auto;
+    }
+
+    .product-item img {
+        width: 70px;
+        height: 70px;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .product-item h3 {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .product-item .product-info {
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+
+    .product-item .btn {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+}
+/* Estilos para pantallas entre 361px y 508px */
+@media (min-width: 361px) and (max-width: 508px) {
+    .product-grid {
+        padding: 5px;
+        gap: 5px;
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    }
+
+    .product-item {
+        padding: 5px;
+        max-width: 140px;
+        margin: 0 auto;
+    }
+
+    .product-item img {
+        width: 70px;
+        height: 70px;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .product-item h3 {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .product-item .product-info {
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+
+    .product-item .btn {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+    header .logo-image {
+        width: 130px; /* Tamaño ajustado de la imagen */
+        height: auto;
+    }
+}
+
+
+/* Móviles pequeños (máx. 360px) */
+@media (max-width: 360px) {
+    .product-grid {
+        padding: 5px;
+        gap: 5px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-item {
+        padding: 5px;
+        max-width: 140px;
+        margin: 0 auto;
+    }
+
+    .product-item img {
+        width: 70px;
+        height: 70px; /* Hacemos el ancho y alto iguales */
+        object-fit: contain; /* Muestra la imagen completa sin recortes */
+        display: block; /* Asegura que se comporte como elemento de bloque */
+        margin: 0 auto; /* Centra la imagen dentro del contenedor */
+    }
+
+    .product-item h3 {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .product-item .product-info {
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+
+    .product-item .btn {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+}
+
+

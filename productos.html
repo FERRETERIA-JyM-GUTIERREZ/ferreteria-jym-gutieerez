@@ -1,0 +1,1953 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="productos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+        <!-- Header -->
+            <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="img_index/JyM.png" alt="Logo de la Ferretería" class="logo-image">
+            <div>
+                <h1 class="logo-text">Ferretería J&M Gutiérrez</h1>
+                <p class="sub-text">Suministros Industriales y Ferreteros</p>
+            </div>
+        </div>
+
+        <!-- Menú hamburguesa ) -->
+        
+        
+        <nav id="menu">
+            <input type="text" id="searchInput" placeholder="Buscar productos">
+
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contactenos.html">Contáctenos</a></li>
+                <li><a href="marcas.html">Marcas</a></li>
+            </ul>
+        </nav>
+    </header>
+ <!-- Contenedor de la nieve -->
+ <div class="snowflakes" aria-hidden="true"></div>
+
+ <!-- Mensaje flotante -->
+ <div class="floating-message">
+     <span class="message-text">Feliz Navidad y Próspero Año 2025</span>
+ </div>
+
+
+    <!-- Sección de Productos -->
+    <section class="products">
+        <h2>Tienda especializada en venta de ferreteria en general</h2>
+        
+        <div class="loading-container">
+            <div class="spinner"></div>
+            <p id="loading-text">Cargando Productos...</p>
+        </div>
+        <div id="message" class="success-message" style="display: none;">
+            <span>&#x2714;</span> ¡Productos cargados exitosamente!
+        </div>
+        
+        
+        
+        <div class="product-grid" id="productContainer"></div>
+
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="img_productos/TIDLI201452.jpg" alt="TALADRO DE IMPACTO DE IONES DE LITIO">
+                <h3>TALADRO DE IMPACTO DE IONES DE LITIO</h3>
+                <p class="product-info">Producto disponible</p>
+                <a href="#" class="btn" onclick="openModal('modal1')">Ver detalles</a>
+            </div>
+            <div class="product-item">
+                <img src="img_productos/TIDLI20508.jpg" alt="TALADRO DE IMPACTO SIN ESCOBILLAS DE IONES DE LITIO">
+                <h3>TALADRO DE IMPACTO SIN ESCOBILLAS DE IONES DE LITIO</h3>
+                <p class="product-info">Producto disponible</p>
+                <a href="#" class="btn" onclick="openModal('modal2')">Ver detalles</a>
+            </div>
+            <div class="product-item">
+                <img src="img_productos/TIDLI20602.jpg" alt="TALADRO DE IMPACTO SIN ESCOBILLAS DE IONES DE LITIO">
+                <h3>TALADRO DE IMPACTO SIN ESCOBILLAS DE IONES DE LITIO</h3>
+                <p class="product-info">Producto disponible</p>
+                <a href="#" class="btn" onclick="openModal('modal3')">Ver detalles</a>
+            </div>
+            <div class="product-item">
+                <img src="img_productos/TIWLI2038.jpg" alt="LLAVE DE IMPACTO SIN ESCOBILLAS DE IONES DE LITIO">
+                <h3>LLAVE DE IMPACTO SIN ESCOBILLAS DE IONES DE LITIO</h3>
+                <p class="product-info">Producto disponible</p>
+                <a href="#" class="btn" onclick="openModal('modal4')">Ver detalles</a>
+            </div>
+            <div class="product-item">
+                <img src="img_productos/TIWLI2050.jpg" alt="LLAVE DE IMPACTO SIN ESCOBILLAS DE IONES DE LITIO">
+                <h3>LLAVE DE IMPACTO SIN ESCOBILLAS DE IONES DE LITIO</h3>
+                <p class="product-info">Producto disponible</p>
+                <a href="#" class="btn" onclick="openModal('modal5')">Ver detalles</a>
+            </div>
+                
+            <div class="product-item">
+                <img src="img_productos/TIRLI2002.jpg" alt="CONTROLADOR DE IMPACTO SIN ESCOBILLAS DE IONES DE LITIO ">
+                <h3>CONTROLADOR DE IMPACTO SIN ESCOBILLAS DE IONES DE LITIO</h3>
+                <p class="product-info">Producto disponible</p>
+                <a href="#" class="btn" onclick="openModal('modal6')">Ver detalles</a>
+            </div>
+        <div class="product-item">
+            <img src="img_productos/TAGLI211542.jpg" alt="ESMERIL ANGULAR SIN ESCOBILLAS DE IONES DE LITIO">
+            <h3>ESMERIL ANGULAR SIN ESCOBILLAS DE IONES DE LITIO</h3>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal7')">Ver detalles</a>
+        </div>
+        
+        <div class="product-item">
+            <img src="img_productos/TAGLI76012.jpg" alt="MINI HERRAMIENTA DE CORTE DE IONES DE LITIO">
+            <h3>MINI HERRAMIENTA DE CORTE DE IONES DE LITIO</h3>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal8')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TTVLI20101.jpg" alt="VIBRADOR P/CERAMICA BALDOSA Y MAYOLICA DE IONES DE LITIO">
+            <h3>VIBRADOR P/CERAMICA BALDOSA Y MAYOLICA DE IONES DE LITIO</h3>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal9')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TRHLI2201.jpg" alt="MARTILLO ROTATIVO DE IONES DE LITIO">
+            <h3>MARTILLO ROTATIVO DE IONES DE LITIO </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal10')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TROSLI2001.jpg" alt="LIJADORA ROTATIVA DE IONES DE LITIO">
+            <h3>LIJADORA ROTATIVA DE IONES DE LITIO </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal11')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TGSLI20686.jpg" alt="MINI MOTOSIERRA DE IONES DE LITIO">
+            <h3>MINI MOTOSIERRA DE IONES DE LITIO </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal12')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TFBLI20011.jpg" alt="BATERIA DE IONES DE LITIO">
+            <h3>BATERIA DE IONES DE LITIO </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal13')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TFBLI20531.jpg" alt="BATERIA DE IONES DE LITIO">
+            <h3>BATERIA DE IONES DE LITIO </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal14')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TFCLI2001.jpg" alt="CARGADOR DE BATERIAS DE IONES DE LITIO">
+            <h3>CARGADOR DE BATERIAS DE IONES DE LITIO </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal15')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TFCLI20411.jpg" alt="CARGADOR DE BATERIAS DE IONES DE LITIO">
+            <h3>CARGADOR DE BATERIAS DE IONES DE LITIO </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal16')">Ver detalles</a>
+            
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TG1061356.jpg" alt="TALADRO DE IMPACTO">
+            <h3>TALADRO DE IMPACTO </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal17')">Ver detalles</a>
+        </div> 
+        <div class="product-item">
+            <img src="img_productos/TG107136.jpg" alt="TALADRO DE IMPACTO">
+            <h3>TALADRO DE IMPACTO </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal18')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TG111136.jpg" alt="TALADRO DE IMPACTO">
+            <h3>TALADRO DE IMPACTO </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal19')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TG211166.jpg" alt="TALADRO DE IMPACTO">
+            <h3>TALADRO DE IMPACTO </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal20')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TD614006.jpg" alt="MEZCLADORA DE PINTURA/PEGAMENTO">
+            <h3>MEZCLADORA DE PINTURA/PEGAMENTO </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal21')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TG10711556.jpg" alt="AMOLADORA ANGULAR">
+            <h3>AMOLADORA ANGULAR </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal22')">Ver detalles</a>
+        </div>
+    
+        <div class="product-item">
+            <img src="img_productos/TG10912556.jpg" alt="AMOLADORA ANGULAR">
+            <h3>AMOLADORA ANGULAR </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal23')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TG109125565.jpg" alt="AMOLADORA ANGULAR">
+            <h3>AMOLADORA ANGULAR </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal24')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TG1252306.jpg" alt="AMOLADORA ANGULAR">
+            <h3>AMOLADORA ANGULAR </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal25')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TG1262306.jpg" alt="AMOLADORA ANGULAR">
+            <h3>AMOLADORA ANGULAR </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal26')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TH110266.jpg" alt="MARTILLO ROTATIVO">
+            <h3>MARTILLO ROTATIVO </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal27')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TH1153256.jpg" alt="MARTILLO ROTATIVO">
+            <h3>MARTILLO ROTATIVO </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal28')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TH118366.jpg" alt="MARTILLO ROTATIVO">
+            <h3>MARTILLO ROTATIVO </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal29')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TH2130016.jpg" alt="MARTILLO DEMOLEDOR">
+            <h3>MARTILLO DEMOLEDOR </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal30')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TH215002.jpg" alt="MARTILLO DEMOLEDOR">
+            <h3>MARTILLO DEMOLEDOR </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal31')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TH215456.jpg" alt="MARTILLO DEMOLEDOR">
+            <h3>MARTILLO DEMOLEDOR </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal32')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TS11418526.jpg" alt="SIERRA CIRCULAR">
+            <h3>SIERRA CIRCULAR </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal33')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TS206656.jpg" alt="SIERRA CALADORA">
+            <h3>SIERRA CALADORA </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal34')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TS2081006.jpg" alt="SIERRA CALADORA">
+            <h3>SIERRA CALADORA </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal35')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TF2231106.jpg" alt="LIJADORA ORBITAL">
+            <h3>LIJADORA ORBITAL </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal36')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TS3006.jpg" alt="HERRAMIENTA MULTIFUNCIONAL">
+            <h3>HERRAMIENTA MULTIFUNCIONAL </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal37')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TT328151.jpg" alt="TERMOFUSORA INDUSTRIAL">
+            <h3>TERMOFUSORA INDUSTRIAL </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal38')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TL7508226.jpg" alt="CEPILLO ELECTRICO">
+            <h3>CEPILLO ELECTRICO </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal39')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TL1108236.jpg" alt="CEPILLO ELECTRICO">
+            <h3>CEPILLO ELECTRICO </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal40')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TR111226.jpg" alt="ROUTER ELECTRICO">
+            <h3>ROUTER ELECTRICO </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal41')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TR111216.jpg" alt="ROUTER ELECTRICO">
+            <h3>ROUTER ELECTRICO </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal42')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TLT6001.jpg" alt="ROUTER ELECTRICO">
+            <h3>ROUTER ELECTRICO </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal43')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TT3506.jpg" alt="PISTOLA PARA PINTAR ELECTRICO">
+            <h3>PISTOLA PARA PINTAR ELECTRICO </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal44')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TT5006-2.jpg" alt="KIT PORTATIL PARA PINTAR CON COMPRESORA DE AIRE">
+            <h3>KIT PORTATIL PARA PINTAR CON COMPRESORA DE AIRE </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal45')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TB20078.jpg" alt="PISTOLA DE CALOR">
+            <h3>PISTOLA DE CALOR </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal46')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TB20045.jpg" alt="PISTOLA DE CALOR">
+            <h3>PISTOLA DE CALOR </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal47')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TB20056.jpg" alt="PISTOLA DE CALOR">
+            <h3>PISTOLA DE CALOR </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal48')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TG513326.jpg" alt="RECTIFICADORA MINI">
+            <h3>RECTIFICADORA MINI </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal49')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TG55061.jpg" alt="RECTIFICADORA RECTA">
+            <h3>RECTIFICADORA RECTA </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal50')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TB4036.jpg" alt="SOPLADORA ASPIRADORA">
+            <h3>SOPLADORA ASPIRADORA </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal51')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TB6036.jpg" alt="SOPLADORA ASPIRADORA">
+            <h3>SOPLADORA ASPIRADORA </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal52')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TB2086.jpg" alt="SOPLADORA ASPIRADORA">
+            <h3>SOPLADORA ASPIRADORA </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal53')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TW22005.jpg" alt="MAQUINA DE SOLDAR INVERSOR MMA">
+            <h3>MAQUINA DE SOLDAR INVERSOR MMA </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal54')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TBC1501.jpg" alt="CARGADOR DE BATERIA">
+            <h3>CARGADOR DE BATERIA </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal55')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TDDM28001.jpg" alt="PERFORADORA DE CONCRETO">
+            <h3>PERFORADORA DE CONCRETO </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal56')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TAT83501.jpg" alt="CLAVADORA NEOMATICA">
+            <h3>CLAVADORA NEOMATICA </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal57')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TAT40122.jpg" alt="LLAVE DE IMPACTO DE AIRE">
+            <h3>LLAVE DE IMPACTO DE AIRE </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal58')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TAT10401.jpg" alt="PISTOLA DE ALTA PRESION">
+            <h3>PISTOLA DE ALTA PRESION </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal59')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TAT10402.jpg" alt="PISTOLA DE ALTA PRESION">
+            <h3>PISTOLA DE ALTA PRESION </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal60')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TAT11001.jpg" alt="PISTOLA DE ALTA PRESION">
+            <h3>PISTOLA DE ALTA PRESION </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal61')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TAT11005.jpg" alt="PISTOLA DE ALTA PRESION">
+            <h3>PISTOLA DE ALTA PRESION </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal62')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TAT10601.jpg" alt="PISTOLA DE ALTA PRESION">
+            <h3>PISTOLA DE ALTA PRESION </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal63')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TAT10605.jpg" alt="PISTOLA DE ALTA PRESION">
+            <h3>PISTOLA DE ALTA PRESION </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal64')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TAT20751.jpg" alt="PISTOLA DE LAVADO">
+            <h3>PISTOLA DE LAVADO </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal65')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TG5602411.jpg" alt="MOTOSIERRA">
+            <h3>MOTOSIERRA </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal66')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TGTSB52401.jpg" alt="ESPADA DE MOTOSIERRA">
+            <h3>ESPADA DE MOTOSIERRA </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal67')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TGT11316.jpg" alt="HIDROLAVADORA DE ALTA PRESION">
+            <h3>HIDROLAVADORA DE ALTA PRESION </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal68')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TGT11356.jpg" alt="HIDROLAVADORA DE ALTA PRESION">
+            <h3>HIDROLAVADORA DE ALTA PRESION </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal69')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TGTSG026.jpg" alt="PISTOLA PARA LAVADORA DE ALTA PRESION">
+            <h3>PISTOLA PARA LAVADORA DE ALTA PRESION </h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal70')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TGTPB251.jpg" alt="CEPILLO PARA LAVADORA DE ALTA PRESION">
+            <h3>CEPILLO PARA LAVADORA DE ALTA PRESION</h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal71')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TMFP402.jpg" alt="BOQUILLA DE ESPUMA DE JABÓN SHAMPOO PARA HIDROLAVADORA">
+            <h3>BOQUILLA DE ESPUMA DE JABÓN SHAMPOO PARA HIDROLAVADORA</h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal72')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TGTHPH526.jpg" alt="MANGUERA PARA LAVADORA DE ALTA PRESION">
+            <h3>MANGUERA PARA LAVADORA DE ALTA PRESION</h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal73')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TSP2608.jpg" alt="CASCO DE SEGURIDAD AZUL">
+            <h3>CASCO DE SEGURIDAD AZUL</h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal74')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TSP610.jpg" alt="CARETA TRANSPARENTE INDUSTRIAL">
+            <h3>CARETA TRANSPARENTE INDUSTRIAL</h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal75')">Ver detalles</a>
+        </div>
+        <div class="product-item">
+            <img src="img_productos/TACSR0121.jpg" alt="JUEGO DE FRESAS PARA ROUTER">
+            <h3>JUEGO DE FRESAS PARA ROUTER</h3><br>
+            <p class="product-info">Producto disponible</p>
+            <a href="#" class="btn" onclick="openModal('modal76')">Ver detalles</a>
+        </div>
+        </div>  
+    
+        
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Modales para detalles de productos --> 
+
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h2>Detalles del Taladro de Impacto de Iones de Litio</h2>
+            <p>
+                <strong>VOLTAJE:</strong> 20V<br>
+                <strong>VELOCIDAD SIN CARGA:</strong> 0-400/0-1500 RPM<br>
+                <strong>TASA DE IMPACTO MÁXIMA:</strong> 22500 BPM<br>
+                <strong>PAR MÁXIMO:</strong> 45 NM<br>
+                <strong>MANDRIL DE METAL:</strong> Sí<br>
+                <strong>CAPACIDAD DEL PORTABROCAS:</strong> 0,8-10 MM<br>
+                <strong>AJUSTES DE PAR:</strong> 18+1+1<br>
+                <strong>CAMBIO MECÁNICO DE 2 VELOCIDADES:</strong> Sí
+            </p>
+            <p class="price">Precio: <span>S/ 239.99</span></p>
+        </div>
+    </div>
+    
+    
+    
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h2>Detalles del Taladro de Impacto sin ESCOBILLAS de Iones de Litio</h2>
+            <p>
+                <strong>FUNCIÓN DE BLOQUEO DEL EJE:</strong> MOTOR SIN ESCOBILLAS<br>
+                <strong>VOLTAJE:</strong> 20V<br>
+                <strong>VELOCIDAD SIN CARGA:</strong> 0-450/0-1800 RPM<br>
+                <strong>TASA DE IMPACTO MÁXIMA:</strong> 27000 BPM<br>
+                <strong>PAR MÁXIMO:</strong> 50 NM<br>
+                <strong>MANDRIL DE METAL:</strong> Sí<br>
+                <strong>CAPACIDAD DEL PORTABROCAS:</strong> 0,8-10 MM<br>
+                <strong>AJUSTES DE PAR:</strong> 18+1+1<br>
+                <strong>CAMBIO MECÁNICO DE 2 VELOCIDADES:</strong> Sí
+            </p>
+            <p class="price">Precio: <span>S/ 330.99</span></p>
+        </div>
+    </div>
+    
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h2>Detalles del Taladro de Impacto sin ESCOBILLAS de Iones de Litio</h2>
+            <p>
+                <strong>MOTOR SIN ESCOBILLAS:</strong> Sí<br>
+                <strong>VOLTAJE:</strong> 20V<br>
+                <strong>VELOCIDAD SIN CARGA:</strong> 0-550/0-2000 RPM<br>
+                <strong>TASA DE IMPACTO MÁXIMA:</strong> 30000 BPM<br>
+                <strong>PAR MÁXIMO:</strong> 60 NM<br>
+                <strong>MANDRIL DE METAL:</strong> Sí<br>
+                <strong>CAPACIDAD DEL PORTABROCAS:</strong> 13 MM<br>
+                <strong>AJUSTES DE PAR:</strong> 22+1+1<br>
+                <strong>CAMBIO MECÁNICO DE 2 VELOCIDADES:</strong> Sí
+            </p>
+            <p class="price">Precio: <span>S/ --.--</span></p>
+        </div>
+    </div>
+    
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h2>Detalles del Llave de Impacto sin ESCOBILLAS de Iones de Litio</h2>
+            <p>
+                <strong>MOTOR SIN ESCOBILLAS:</strong> Sí<br>
+                <strong>VOLTAJE:</strong> 20V<br>
+                <strong>CUADRADILLO:</strong> 1/2"<br>
+                <strong>VELOCIDAD SIN CARGA:</strong> 0-1300/0-2300 RPM<br>
+                <strong>TASA DE IMPACTO:</strong> 0-2000/0-3300 BPM<br>
+                <strong>PAR MÁXIMO:</strong> 300 NM<br>
+                <strong>LUZ DE TRABAJO LED INTEGRADA:</strong> Sí<br>
+                <strong>INCLUIR:</strong> 2 CASQUILLOS (19, 21 MM), PAQUETE DE BATERÍAS DE 2 PIEZAS
+            </p>
+            <p class="price">Precio: <span>S/ 355.99</span></p>
+        </div>
+    </div>
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <h2>Detalles de Llave de Impacto sin ESCOBILLAS de Iones de Litio</h2>
+            <p>
+                <strong>MOTOR SIN ESCOBILLAS:</strong> Sí<br>
+                <strong>VOLTAJE:</strong> 20V<br>
+                <strong>CUADRADILLO:</strong> 1/2"<br>
+                <strong>VELOCIDAD SIN CARGA:</strong> 0-1200/0-1800/0-2200 RPM<br>
+                <strong>TASA DE IMPACTO:</strong> 0-2400/0-2800/0-3300 BPM<br>
+                <strong>PAR DE FIJACIÓN:</strong> 500 NM<br>
+                <strong>PAR DE TORSIÓN PARA ROMPER TUERCAS:</strong> 650 NM<br>
+                <strong>LUZ DE TRABAJO INTEGRADA:</strong> Sí<br>
+                <strong>INCLUIR:</strong> 3 CASQUILLOS<br>
+            </p>
+            <p class="price">Precio: <span>S/ --.--</span></p>
+        </div>
+    </div>
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <h2>Detalles del Controlador de Impacto sin Escobillas de Iones de Litio</h2>
+            <p>
+                <strong>MOTOR SIN ESCOBILLAS</strong><br>
+                <strong>VOLTAJE DE TALADRO:</strong> 20 V<br>
+                <strong>VÁSTAGO HEXAGONAL:</strong> 1/4"<br>
+                <strong>VELOCIDAD SIN CARGA:</strong> 0-1300/0-2100/MIN<br>
+                <strong>TASA DE IMPACTO:</strong> 0-2000/0-3300 BPM<br>
+                <strong>PAR MÁXIMO:</strong> 170 NM<br>
+                <strong>BATERÍAS DE IONES DE LITIO DE 20 V Y 2,0 AH</strong><br>
+                <strong>CON PAQUETE DE BATERÍAS DE 2 PIEZAS</strong><br>
+            </p>
+            <p class="price">Precio: <span>S/ 365.99</span></p>
+        </div>
+    </div>
+    <div id="modal7" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal7')">&times;</span>
+            <h2>Detalles del Esmeril Angular sin Escobillas de Iones de Litio</h2>
+            <p>
+                <strong>MOTOR SIN ESCOBILLAS</strong><br>
+                <strong>VOLTAJE:</strong> 20V<br>
+                <strong>VELOCIDAD SIN CARGA:</strong> 3000/6000/9000 RPM<br>
+                <strong>DIÁMETRO DEL DISCO:</strong> 115 MM<br>
+                <strong>ROSCA DEL HUSILLO:</strong> M14<br>
+                <strong>INCLUIR:</strong><br>
+                1 JUEGO DE DISCOS DE CORTE DE METAL ABRASIVOS (10 PIEZAS)<br>
+                PAQUETE DE BATERÍAS DE 2 PIEZAS DE 4,0 AH (TFBLI2002)<br>
+                1 CARGADOR (TFCLI2001)<br>
+            </p>
+            <p class="price">Precio: <span>S/ --.--</span></p>
+        </div>
+    </div>
+    <div id="modal8" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal8')">&times;</span>
+            <h2>Detalles de la Mini  Herramienta de Corte de Iones de Litio </h2>
+            <p>
+                <strong>VOLTAJE:</strong> 20V<br>
+                <strong>VELOCIDAD SIN CARGA:</strong> 19500 RPM<br>
+                <strong>DIÁMETRO DEL DISCO:</strong> 76 MM (3 ")<br>
+                <strong>ROSCA DEL HUSILLO:</strong> M6<br>
+                <strong>INCLUIR:</strong><br>
+                DISCO DE CORTE DE METAL ABRASIVO DE 4 PIEZAS DE 76 MM<br>
+                DISCO ABRASIVO DE METAL ABRASIVO DE 2 PIEZAS DE 76 MM<br>
+                1 DISCO DE DIAMANTE HÚMEDO DE 76 MM<br>
+                1 UDS LLAVE HEXAGONAL<br>
+            </p>
+            <p class="price">Precio: <span>S/  --.--</span></p>
+        </div>
+    </div>
+    <div id="modal9" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal9')">&times;</span>
+            <h2>Detalles de Vibrador P/Ceramica Baldosa y Mayolica de Iones de Litio  </h2>
+            <p>
+                <strong>MOTOR SIN ESCOBILLAS VOLTAJE:</strong> 20V   <br>
+                <strong>VELOCIDAD SIN CARGA:</strong> 3000/8500 RPM<br>
+                <strong>DIÁMETRO DEL DISCO:</strong> 115 MM<br>
+                <strong>ROSCA DEL HUSILLO:</strong> M14<br>
+                <strong>VOLTIOS DE CARGA:</strong> 220-240 V ~ 50/60 HZ.<br>
+                <strong>CON PAQUETE DE BATERÍAS DE:</strong><br>
+                2 PIEZAS DE 4,0 AH (TFBLI2002) CON CARGADOR DE 1 PIEZA (TFCLI2001E)<br>
+            </p>
+            <p class="price">Precio: <span>S/ 260.99</span></p>
+        </div>
+    </div>
+    <div id="modal10" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal10')">&times;</span>
+            <h2>Detalles de Martillo Rotativo de Iones de Litio</h2>
+            <p>
+                <strong>MOTOR SIN ESCOBILLAS VOLTAJE:</strong> 20V<br>
+                <strong>VELOCIDAD SIN CARGA:</strong> 0-1350/MIN<br>
+                <strong>TASA DE IMPACTO:</strong> 0-4700BPM<br>
+                <strong>FUERZA DE IMPACTO ÚNICA:</strong> 1,5 J<br>
+                <strong>CAPACIDAD MÁXIMA DE PERFORACIÓN:</strong> Φ22 EN HORMIGÓN, LUZ DE TRABAJO INTEGRADA<br>
+                <strong>SISTEMA DE MANDRIL SDS PLUS CON TALADROS DE:</strong> 3 PIEZAS Y CINCELES DE 1 PIEZA<br>
+            </p>
+            <p class="price">Precio: <span>S/ 300.99</span></p>
+        </div>
+    </div>
+    <div id="modal11" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal11')">&times;</span>
+            <h2>Detalles de la Lijadora Rotativa de Iones de Litio </h2>
+            <p>
+                <strong>VOLTAJE:</strong> 20V<br>
+                <strong>VELOCIDAD SIN CARGA:</strong> 10000/MIN<br>
+                <strong>TAMAÑO INFERIOR:</strong> 125 MM<br>
+                CON 5 PAPELES DE LIJA. BATERÍA Y CARGADOR NO INCLUIDOS<br>
+                EMBALADO POR CAJA DE COLOR<br>
+            </p>
+            <p class="price">Precio: <span>S/ 150.99</span></p>
+        </div>
+    </div>
+    <div id="modal12" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal12')">&times;</span>
+            <h2>Detalles de la Mini Motosierra de Iones de Litio </h2>
+            <p>
+                <strong>MOTOR SIN ESCOBILLAS</strong><br>
+                <strong>VOLTAJE:</strong> 20V<br>
+                <strong>LONGITUD DE LA BARRA:</strong> 6 "(15 CM)<br>
+                <strong>VELOCIDAD DE LA CADENA:</strong> 11 M/S<br>
+                <strong>LUBRICACIÓN AUTOMÁTICA INCLUIR:</strong><br>
+                1 CADENA DE SIERRA DE 6 PULGADAS.<br>
+                1 BARRA DE SIERRA DE CADENA DE 6 PULGADAS.<br>
+                1 UDS LLAVE<br>
+                PAQUETE DE BATERÍAS DE 2 PIEZAS<br>
+            </p>
+            <p class="price">Precio: <span>S/ --.--</span></p>
+            
+        </div>
+    </div>
+    <div id="modal13" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal13')">&times;</span>
+            <h2>Detalles de la Bateria de Iones de Litio </h2>
+            <p>
+                <strong>VOLTIOS:</strong> 20V<br>
+                <strong>BATERÍA DE IONES DE LITIO DE 2,0 AH</strong><br>
+                <strong>INDICADOR LED DE ENERGÍA DE LA BATERÍA</strong><br>
+                UNA BATERÍA SE ADAPTA A TODAS LAS HERRAMIENTAS MÚLTIPLES P20S<br>
+                EMBALADO POR CAJA DE COLOR<br>
+            </p>
+            <p class="price">Precio: <span>S/ 58.99</span></p>
+        </div>
+    </div>
+    <div id="modal14" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal14')">&times;</span>
+            <h2>Detalles de la Bateria de Iones de Litio </h2>
+            <p>
+                <strong>VOLTAJE:</strong> 20V<br>
+                <strong>PAQUETE DE BATERÍAS DE IONES DE LITIO DE 5,0 AH</strong><br>
+                <strong>INDICADOR LED DE ENERGÍA DE LA BATERÍA</strong><br>
+                UNA BATERÍA SE ADAPTA A TODAS LAS HERRAMIENTAS MÚLTIPLES P20S<br>
+                EMBALADO POR CAJA DE COLOR<br>
+            </p>
+            <p class="price">Precio: <span>S/ --.--</span></p>
+        </div>
+    </div>
+    <div id="modal15" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal15')">&times;</span>
+            <h2>Detalles del Cargador de  Baterias de Iones de Litio </h2>
+            <p>
+                <strong>VOLTAJE:</strong> 20V<br>
+                <strong>CORRIENTE DE CARGA:</strong> 2A<br>
+                CARGA UNA BATERÍA DE 20 V Y 2,0 AH EN 1 HORA<br>
+                CARGA UNA BATERÍA DE 20 V Y 4,0 AH EN 2 HORAS<br>
+                EMBALADO POR CAJA DE COLOR<br>
+            </p>
+            <p class="price">Precio: <span>S/ --.--</span></p>
+            
+        </div>
+    </div>
+    <div id="modal16" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal16')">&times;</span>
+            <h2>Detalles del Cargador de  Baterias de Iones de Litio </h2>
+            <p>
+                <strong>VOLTAJE DE ENTRADA:</strong> 220-240V~50/60HZ<br>
+                <strong>VOLTAJE DE SALIDA:</strong> 20V<br>
+                <strong>CORRIENTE DE SALIDA:</strong> 4A<br>
+                <strong>EMBALADO POR:</strong> CAJA DE COLOR<br>
+            </p>
+            
+            <p class="price">Precio: <span>S/ --.--</span></p>
+        </div>
+    </div>
+    <div id="modal17" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal17')">&times;</span>
+            <h2>Detalles del Taladro de Impacto </h2>
+            <p>
+                <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+                <strong>POTENCIA DE ENTRADA:</strong> 680W<br>
+                <strong>VELOCIDAD SIN CARGA:</strong> 0-3000 RPM<br>
+                <strong>CAPACIDAD MÁXIMA DE PERFORACIÓN:</strong> 13 MM<br>
+                VELOCIDAD VARIABLE<br>
+                INTERRUPTOR DE AVANCE/RETROCESO<br>
+                FUNCIÓN DE MARTILLO<br>
+                EMBALADO EN CAJA DE CARTÓN<br>
+            </p>
+            <p class="price">Precio: <span>S/ 75.99</span></p>
+        </div>
+    </div>
+    <div id="modal18" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal18')">&times;</span>
+            <h2>Detalles del Taladro de Impacto </h2>
+            <p>
+                <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+                <strong>POTENCIA DE ENTRADA:</strong> 710W<br>
+                <strong>VELOCIDAD SIN CARGA:</strong> 0-3000 RPM<br>
+                <strong>CAPACIDAD MÁXIMA DE PERFORACIÓN:</strong> 13 MM<br>
+                CONTROL DE VELOCIDAD VARIABLE<br>
+                INTERRUPTOR DE AVANCE/RETROCESO<br>
+                FUNCIÓN DE MARTILLO<br>
+                EMBALADO POR CAJA DE COLOR<br>
+            </p>
+            <p class="price">Precio: <span>S/ 85.99</span></p>
+        </div>
+    </div>
+    <div id="modal19" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal19')">&times;</span>
+            <h2>Detalles del Taladro de Impacto </h2>
+            <p>
+                <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+                <strong>POTENCIA DE ENTRADA:</strong> 1010W<br>
+                <strong>VELOCIDAD SIN CARGA:</strong> 0-2800 RPM<br>
+                <strong>CAPACIDAD MÁXIMA DE PERFORACIÓN:</strong> 13 MM<br>
+                VELOCIDAD VARIABLE<br>
+                INTERRUPTOR DE AVANCE/RETROCESO<br>
+                FUNCIÓN DE MARTILLO<br>
+                CAJA DE CAMBIOS DURADERA DE ALUMINIO<br>
+            </p>
+            
+            <p class="price">Precio: <span>S/ 138.99</span></p>
+        </div>
+    </div>
+    <div id="modal20" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal20')">&times;</span>
+            <h2>Detalles del Taladro de Impacto </h2>
+            <p>
+                <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+                <strong>POTENCIA DE ENTRADA:</strong> 1100W<br>
+                <strong>VELOCIDAD SIN CARGA:</strong> 0-1200 RPM / 0-3000 RPM<br>
+                <strong>CAPACIDAD MÁXIMA DE PERFORACIÓN:</strong> 16 MM<br>
+                CONTROL DE VELOCIDAD VARIABLE<br>
+                ACCIÓN DE AVANCE/RETROCESO<br>
+                FUNCIÓN DE MARTILLO<br>
+                CAJA DE CAMBIOS MECÁNICA DE ALUMINIO<br>
+                CON 1 JUEGO DE ESCOBILLAS<br>
+            </p>
+            
+            <p class="price">Precio: <span>S/ 195.99</span></p>
+            
+        </div>
+    </div>
+    <div id="modal21" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal21')">&times;</span>
+            <h2>Detalles de la mezcladora de Pintura/Pegamento </h2>
+            <p>
+                <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+                <strong>POTENCIA DE ENTRADA:</strong> 1400W<br>
+                <strong>VELOCIDAD SIN CARGA:</strong> 0-500 RPM / 0-750 RPM<br>
+                <strong>ROSCA DE LA ALMOHADILLA DE MEZCLA:</strong> M14<br>
+                CAJA DE CAMBIOS DE ALUMINIO<br>
+                LUZ DE TRABAJO INTEGRADA<br>
+                CON 1 UDS. ALMOHADILLA DE MEZCLA<br>
+                CON 1 JUEGO DE ESCOBILLAS DE CARBÓN ADICIONALES<br>
+            </p>
+            
+            <p class="price">Precio: <span>S/ 305.99</span></p>
+            
+        </div>
+    </div>
+    <div id="modal22" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal22')">&times;</span>
+            <h2>Detalles de la Amoladora Angular </h2>
+            <p>
+                <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+                <strong>POTENCIA DE ENTRADA:</strong> 750W<br>
+                <strong>VELOCIDAD SIN CARGA:</strong> 12000 RPM<br>
+                <strong>DIÁMETRO DEL DISCO:</strong> 115 MM<br>
+                <strong>ROSCA DEL HUSILLO:</strong> M14<br>
+                CON 1 UDS MANGO AUXILIAR<br>
+                DISCO NO INCLUIDO<br>
+                EMBALADO POR CAJA DE COLOR<br>
+            </p>            
+            
+            <p class="price">Precio: <span>S/ 109.99</span></p>
+        </div>
+    </div>
+    <div id="modal23" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal23')">&times;</span>
+            <h2>Detalles de la Amoladora Angular </h2>
+            <p>
+                <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+                <strong>POTENCIA DE ENTRADA:</strong> 900W<br>
+                <strong>VELOCIDAD SIN CARGA:</strong> 12000 RPM<br>
+                <strong>DIÁMETRO DEL DISCO:</strong> 125 MM<br>
+                <strong>ROSCA DEL HUSILLO:</strong> M14<br>
+                CON 1 UDS MANGO AUXILIAR<br>
+                DISCO NO INCLUIDO<br>
+                EMBALADO POR CAJA DE COLOR<br>
+            </p>
+                    
+            <p class="price">Precio: <span>S/ 90.99</span></p>
+            
+        </div>
+    </div>
+    <div id="modal24" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal24')">&times;</span>
+            <h2>Detalles de la Amoladora Angular </h2>
+            <p>
+                <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+                <strong>POTENCIA DE ENTRADA:</strong> 900W<br>
+                <strong>VELOCIDAD SIN CARGA:</strong> 5000-12000 RPM<br>
+                <strong>DIÁMETRO DEL DISCO:</strong> 125 MM<br>
+                <strong>ROSCA DEL HUSILLO:</strong> M14<br>
+                <strong>CONTROL DE VELOCIDAD VARIABLE</strong><br>
+                CON 1 UDS MANGO AUXILIAR<br>
+                DISCO NO INCLUIDO<br>
+                EMBALADO POR CAJA DE COLOR<br>
+            </p>
+            
+            <p class="price">Precio: <span>S/ 110.99</span></p>         
+            
+            
+        </div>
+    </div>
+    <div id="modal25" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal25')">&times;</span>
+            <h2>Detalles de la Amoladora Angular </h2>
+            <p>
+                <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+                <strong>POTENCIA DE ENTRADA:</strong> 2400W<br>
+                <strong>VELOCIDAD SIN CARGA:</strong> 6300 RPM<br>
+                <strong>DIÁMETRO DEL DISCO:</strong> 230 MM<br>
+                <strong>ROSCA DEL HUSILLO:</strong> M14<br>
+                CON 1 UDS MANGO AUXILIAR<br>
+                CON 1 JUEGO DE ESCOBILLAS DE CARBÓN<br>
+                EMBALADO POR CAJA DE COLOR<br>
+            </p>
+            
+            <p class="price">Precio: <span>S/ 240.99</span></p>       
+            
+            
+        </div>
+    </div>
+    <div id="modal26" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal26')">&times;</span>
+            <h2>Detalles de la Amoladora Angular </h2>
+            <p>
+                <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+                <strong>POTENCIA DE ENTRADA:</strong> 2600W<br>
+                <strong>VELOCIDAD SIN CARGA:</strong> 6300 RPM<br>
+                <strong>DIÁMETRO DEL DISCO:</strong> 230 MM<br>
+                <strong>ROSCA DEL HUSILLO:</strong> M14<br>
+                CON 1 UDS MANGO AUXILIAR<br>
+                CON 1 JUEGO DE ESCOBILLAS DE CARBÓN<br>
+                EMBALADO POR CAJA DE COLOR<br> 
+            </p>
+            
+            <p class="price">Precio: <span>S/ --.--</span></p>
+        </div>
+    </div>
+    <div id="modal27" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal27')">&times;</span>
+            <h2>Detalles del Martillo Rotativo </h2>
+            <p>
+                <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+                <strong>POTENCIA DE ENTRADA:</strong> 1050W<br>
+                <strong>VELOCIDAD SIN CARGA:</strong> 1100 RPM<br>
+                <strong>TASA DE IMPACTO:</strong> 3800BPM<br>
+                <strong>ENERGÍA DE IMPACTO:</strong> 4.5J<br>
+                <strong>CAPACIDAD MÁXIMA DE PERFORACIÓN:</strong><br>
+                <strong>CONCRETO:</strong> 26 MM<br>
+                <strong>ACERO:</strong> 13MM<br>
+                <strong>MADERA:</strong> 40MM<br>
+            </p>
+            
+            <p class="price">Precio: <span>S/ 220.99</span></p>
+            
+        </div>
+    </div>
+</div>
+<div id="modal28" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal28')">&times;</span>
+        <h2>Detalles del Martillo Rotativo </h2>
+        <p>
+            <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+            <strong>POTENCIA DE ENTRADA:</strong> 1500W<br>
+            <strong>VELOCIDAD SIN CARGA:</strong> 950 RPM<br>
+            <strong>TASA DE IMPACTO:</strong> 4500BPM<br>
+            <strong>ENERGÍA DE IMPACTO:</strong> 5.5J<br>
+            <strong>CAPACIDAD MÁXIMA DE PERFORACIÓN:</strong><br>
+            <strong>CONCRETO:</strong> 32 MM<br>
+            <strong>ACERO:</strong> 13MM<br>
+            <strong>MADERA:</strong> 40MM<br>
+            <strong>SISTEMA DE MANDRIL:</strong> SDS PLUS<br>
+            <strong>SISTEMA ANTIVIBRACIONES</strong><br>
+        </p>
+        
+        <p class="price">Precio: <span>S/ 270.99</span></p>
+        
+        
+    </div>
+</div>
+<div id="modal29" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal29')">&times;</span>
+        <h2>Detalles del Martillo Rotativo </h2>
+        <p>
+            <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+            <strong>POTENCIA DE ENTRADA:</strong> 1800W<br>
+            <strong>VELOCIDAD SIN CARGA:</strong> 850 RPM<br>
+            <strong>TASA DE IMPACTO:</strong> 4200BPM<br>
+            <strong>ENERGÍA DE IMPACTO:</strong> 7.0J<br>
+            <strong>CAPACIDAD MÁXIMA DE PERFORACIÓN:</strong><br>
+            <strong>CONCRETO:</strong> 36 MM<br>
+            <strong>ACERO:</strong> 13MM<br>
+            <strong>MADERA:</strong> 42MM<br>
+            <strong>SISTEMA DE MANDRIL:</strong> SDS PLUS<br>
+            <strong>SISTEMA DE BLOQUEO DE CINCEL</strong><br>
+        </p>
+        
+        
+        <p class="price">Precio: <span>S/ 310.99</span></p>
+        
+        
+    </div>
+</div>
+<div id="modal30" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal30')">&times;</span>
+        <h2>Detalles del Martillo Demoledor </h2>
+        <p>
+            <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+            <strong>POTENCIA DE ENTRADA:</strong> 1300W<br>
+            <strong>TASA DE IMPACTO:</strong> 3800BPM<br>
+            <strong>FUERZA DE IMPACTO:</strong> 20J<br>
+            <strong>SISTEMA ANTIVIBRACIONES</strong><br>
+            <strong>SISTEMA DE MANDRIL:</strong> HEXAGONAL<br>
+            <strong>MARTILLO DEMOLEDOR DE 7KGS.</strong><br>
+            CON 2 CINCELES<br>
+            CON 1 JUEGO DE ESCOBILLAS DE CARBÓN ADICIONALES<br>
+            EMBALADO POR BMC<br>
+        </p>
+        
+        <p class="price">Precio: <span>S/ 340.99</span></p>
+        
+    </div>
+</div>
+<div id="modal31" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal31')">&times;</span>
+        <h2>Detalles del Martillo Demoledor </h2>
+        <p>
+            <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+            <strong>POTENCIA DE ENTRADA:</strong> 1500W<br>
+            <strong>TASA DE IMPACTO:</strong> 1000-1900BPM<br>
+            <strong>FUERZA DE IMPACTO:</strong> 6-25J<br>
+            <strong>SISTEMA ANTIVIBRACIONES</strong><br>
+            <strong>ESCOBILLAS DE CARBÓN CON PARADA AUTOMÁTICA</strong><br>
+            <strong>POTENCIA ELECTRÓNICA CONSTANTE</strong><br>
+            <strong>SISTEMA DE BLOQUEO DE CINCEL</strong><br>
+            <strong>SISTEMA DE MANDRIL:</strong> SDS-MAX<br>
+            <strong>MARTILLO DEMOLEDOR DE 10KGS.</strong><br>
+        </p>
+        
+        <p class="price">Precio: <span>S/ 675.99</span></p>
+        
+    </div>
+</div>
+<div id="modal32" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal32')">&times;</span>
+        <h2>Detalles del Martillo Demoledor </h2>
+        <p>
+            <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+            <strong>POTENCIA DE ENTRADA:</strong> 1700W<br>
+            <strong>TASA DE IMPACTO:</strong> 1400BPM<br>
+            <strong>FUERZA DE IMPACTO:</strong> 45J<br>
+            <strong>SISTEMA DE MANDRIL:</strong> HEXAGONAL<br>
+            <strong>MARTILLO DEMOLEDOR DE 16KGS.</strong><br>
+            CON 2 CINCELES<br>
+            CON 1 JUEGO DE ESCOBILLAS DE CARBÓN ADICIONALES<br>
+            EMBALADO POR BMC<br>
+        </p>
+        
+        <p class="price">Precio: <span>S/ 555.99</span></p>
+        
+    </div>
+</div>
+<div id="modal33" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal33')">&times;</span>
+        <h2>Detalles de la Sierra Circular </h2>
+        <p>
+            <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+            <strong>POTENCIA DE ENTRADA:</strong> 1400W<br>
+            <strong>VELOCIDAD SIN CARGA:</strong> 4800 RPM<br>
+            <strong>DIÁMETRO DE LA HOJA:</strong> 185X20MM<br>
+            <strong>CAPACIDAD DE CORTE:</strong><br>
+            <strong>45 GRADOS:</strong> 44MM<br>
+            <strong>90 GRADOS:</strong> 65 MM<br>
+            <strong>PROFUNDIDAD DE CORTE AJUSTABLE</strong><br>
+            <strong>CORTE EN BISEL AJUSTABLE</strong><br>
+            CON 1 UDS. HOJA DE 185MM<br>
+            EMBALADO POR CAJA DE COLOR<br>
+        </p>
+        
+        <p class="price">Precio: <span>S/ 165.99</span></p>
+        
+    </div>
+</div>
+<div id="modal34" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal34')">&times;</span>
+        <h2>Detalles de la Sierra Caladora </h2>
+        <p>
+            <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+            <strong>POTENCIA DE ENTRADA:</strong> 570W<br>
+            <strong>VELOCIDAD SIN CARGA:</strong> 800-3000 RPM<br>
+            <strong>CAPACIDAD DE CORTE:</strong><br>
+            <strong>MADERA:</strong> 65MM<br>
+            <strong>ACERO:</strong> 8MM<br>
+            <strong>FUNCIÓN DE PÉNDULO DE 4 PASOS</strong><br>
+            CON 3 HOJAS DE SIERRA<br>
+            CON 1 JUEGO DE ESCOBILLAS DE CARBÓN<br>
+            EMBALADO POR CAJA DE COLOR<br>
+        </p>
+        
+        <p class="price">Precio: <span>S/ 102.99</span></p>
+        
+    </div>
+</div>
+<div id="modal35" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal35')">&times;</span>
+        <h2>Detalles de la Sierra Caladora </h2>
+        <p>
+            <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+            <strong>POTENCIA DE ENTRADA:</strong> 800W<br>
+            <strong>VELOCIDAD SIN CARGA:</strong> 800-3000 RPM<br>
+            <strong>CAPACIDAD DE CORTE:</strong><br>
+            <strong>MADERA:</strong> 100MM<br>
+            <strong>ACERO:</strong> 10MM<br>
+            <strong>FUNCIÓN DE PÉNDULO DE 4 PASOS</strong><br>
+            <strong>BASE DE ALUMINIO</strong><br>
+            CON 5 HOJAS DE SIERRA<br>
+            EMBALADO POR CAJA DE COLOR<br>
+        </p>
+        
+        <p class="price">Precio: <span>S/ 165.99</span></p>
+        
+        
+    </div>
+</div>
+<div id="modal36" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal36')">&times;</span>
+        <h2>Detalles de la Lijadora Orbital </h2>
+        <p>
+            <strong>VOLTAJE:</strong> 220V-240V~50/60HZ<br>
+            <strong>POTENCIA DE ENTRADA:</strong> 240W<br>
+            <strong>VELOCIDAD SIN CARGA:</strong> 14000 RPM<br>
+            CON PAPEL DE LIJA DE 5 PIEZAS<br>
+            <strong>BASE INFERIOR:</strong> 110MMX100MM<br>
+            EMBALADO POR CAJA DE COLOR<br>
+        </p>
+        
+        <p class="price">Precio: <span>S/ 105.99</span></p>
+        
+        
+    </div>
+</div>
+<div id="modal37" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal37')">&times;</span>
+        <h2>Detalles de la Herramienta Multifuncional </h2>
+        <p>
+            <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+            <strong>POTENCIA DE ENTRADA:</strong> 300W<br>
+            <strong>VELOCIDAD SIN CARGA:</strong> 10000-20000 RPM<br>
+            CON 1 UDS. CUCHILLA RASPADORA FLEXIBLE<br>
+            CON 1 UDS DE CUCHILLA DE CORTE<br>
+            CON 1 HOJA DE SIERRA SEGMENTADA<br>
+            CON 1 UDS. ALMOHADILLA DE ARENA DELTA<br>
+            CON 3 PAPELES DE LIJA<br>
+        </p>
+        
+        <p class="price">Precio: <span>S/ 120.99</span></p>
+        
+        
+    </div>
+</div>
+<div id="modal38" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal38')">&times;</span>
+        <h2>Detalles de la Termofusora Industrial </h2>
+        <p>
+            <strong>VOLTAJE:</strong> 220V-240V~50/60HZ<br>
+            <strong>POTENCIA NOMINAL:</strong> 800W/1500W<br>
+            <strong>DIÁMETRO DE SOLDADURA:</strong> 20-63 MM<br>
+            <strong>TEMPERATURA DE TRABAJO:</strong> 0-300℃<br>
+            <strong>APLICANDO A:</strong> PP-R, PB, PE, PE-RT<br>
+            CON CASQUILLOS DE SOLDADURA DE 6 UDS: 20, 25, 32, 40, 50, 63MM<br>
+            CON 1 UDS CORTADOR DE TUBOS<br>
+            CON 1 UDS DESTORNILLADOR<br>
+            CON 1 UDS DE CINTA<br>
+        </p>
+        
+        <p class="price">Precio: <span>S/ 170.99</span></p>
+        
+        
+    </div>
+</div>
+<div id="modal39" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal39')">&times;</span>
+        <h2>Detalles del Cepillo Electrico </h2>
+        <p>
+            <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+            <strong>POTENCIA DE ENTRADA:</strong> 750W<br>
+            <strong>VELOCIDAD SIN CARGA:</strong> 17000 RPM<br>
+            <strong>ANCHO Y PROFUNDIDAD DE PLANIFICACIÓN:</strong> 82X2 MM<br>
+            BASE DE ALUMINIO RESISTENTE<br>
+            CUBIERTA LATERAL DE ALUMINIO<br>
+            CON 1 LLAVE DE TUBO.<br>
+            CON 1 GUÍA PARALELA.<br>
+            CON 1 JUEGO DE ESCOBILLAS DE CARBÓN ADICIONALES<br>
+            EMBALADO POR CAJA DE COLOR<br>
+        </p>
+        
+        <p class="price">Precio: <span>S/ 160.99</span></p>
+        
+    </div>
+</div>
+<div id="modal40" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal40')">&times;</span>
+        <h2>Detalles del Cepillo Electrico </h2>
+        <p>
+            <strong>VOLTIOS:</strong> 220-240V~50/60HZ<br>
+            <strong>POTENCIA DE ENTRADA:</strong> 1050W<br>
+            <strong>VELOCIDAD SIN CARGA:</strong> 16000 RPM<br>
+            <strong>ANCHO Y PROFUNDIDAD DE PLANIFICACIÓN:</strong> 82X3 MM<br>
+            BASE DE ALUMINIO RESISTENTE<br>
+            CUBIERTA LATERAL DE ALUMINIO<br>
+            SISTEMA DE CINTURÓN DE AUTOENFRIAMIENTO<br>
+            CON 2 UDS CUCHILLAS DE CEPILLADO<br>
+            CON 1 UDS CINTURÓN<br>
+        </p>
+        
+        <p class="price">Precio: <span>S/ 124.99</span></p>
+        
+    </div>
+</div>
+<div id="modal41" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal41')">&times;</span>
+        <h2>Detalles del Router Electrico </h2>
+        <p>
+            <strong>VOLTAJE:</strong> 220V-240V~50/60HZ<br>
+            <strong>POTENCIA DE ENTRADA:</strong> 2200W<br>
+            <strong>VELOCIDAD SIN CARGA:</strong> 9000-23000 RPM<br>
+            <strong>TAMAÑO DE LA PINZA:</strong> 6, 8, 12 MM, 1/4", 1/2"<br>
+            <strong>CAPACIDAD DE INMERSIÓN:</strong> 0-60 MM<br>
+            CONTROL DE VELOCIDAD VARIABLE<br>
+            CON PINZAS DE 6, 8, 12 MM, 1/4", 1/2"<br>
+            CON 1 UDS ANILLO PARA HACER<br>
+        </p>
+        
+        <p class="price">Precio: <span>S/ 188.99</span></p>
+        
+    </div>
+</div>
+<div id="modal42" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal42')">&times;</span>
+        <h2>Detalles del Router Electrico </h2>
+        <p>
+            <strong>VOLTAJE:</strong> 220V-240V~50/60HZ<br>
+            <strong>POTENCIA DE ENTRADA:</strong> 1600W<br>
+            <strong>VELOCIDAD SIN CARGA:</strong> 22000 RPM<br>
+            <strong>TAMAÑO DE LA PINZA:</strong> 6, 8, 12 MM, 1/4", 1/2"<br>
+            <strong>CAPACIDAD DE INMERSIÓN:</strong> 0-60 MM<br>
+            CON 1 UDS ANILLO PARA HACER FRENTE<br>
+            CON 1 VALLA GUÍA DE ALUMINIO<br>
+            CON 1 JUEGO DE GUÍA PARALELA<br>
+            CON 1 JUEGO DE ESCOBILLAS<br>
+        </p>
+        <p class="price">Precio: <span>S/ 229.99</span></p>
+    </div>
+</div>
+<div id="modal43" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal43')">&times;</span>
+        <h2>Detalles del Router Electrico </h2>
+        <p>
+            <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+            <strong>POTENCIA DE ENTRADA:</strong> 600W<br>
+            <strong>VELOCIDAD SIN CARGA:</strong> 34500 RPM<br>
+            <strong>TAMAÑO DE LA PINZA:</strong> 6 MM Y 1/4"<br>
+            <strong>INCLUIR:</strong><br>
+            2 UDS LLAVES<br>
+            1 GUÍA DE PLANTILLA<br>
+            1 RIEL GUÍA HORIZONTAL<br>
+            1 UDS GUÍA LINEAL<br>
+            1 JUEGO DE COMPONENTES DEL RODILLO<br>
+            1 JUEGO DE ESCOBILLAS<br>
+        </p>
+        <p class="price">Precio: <span>S/ --.--</span></p>
+        
+    </div>
+</div>
+<div id="modal44" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal44')">&times;</span>
+        <h2>Detalles de la Pistola Electrico para Pintar</h2>
+        <p>
+            <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+            <strong>POTENCIA DE ENTRADA:</strong> 450W<br>
+            <strong>PRESIÓN DE PULVERIZACIÓN:</strong> 0,1-0,2 BAR<br>
+            <strong>FLUJO MÁXIMO:</strong> 380 ML/MIN<br>
+            <strong>MÁX. VISCOSIDAD:</strong> 50DIN-S<br>
+            <strong>CAPACIDAD DEL CONTENEDOR:</strong> 800ML<br>
+            <strong>ACCESORIOS:</strong><br>
+            1X TAZA MEDIDORA DE VISCOSIDAD<br>
+            1X AGUJA DE LIMPIEZA<br>
+        </p>        
+        <p class="price">Precio: <span>S/ 88.99</span></p>
+        
+    </div>
+</div>
+<div id="modal45" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal45')">&times;</span>
+        <h2>Detalles del Kit Portatil para Pintar con Compresora de Aire</h2>
+        <p>
+            <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+            <strong>POTENCIA DE ENTRADA:</strong> 550W<br>
+            <strong>PRESIÓN DE PULVERIZACIÓN:</strong> 0,1-0,2 BAR<br>
+            <strong>FLUJO MÁXIMO:</strong> 850 ML/MIN<br>
+            <strong>MÁX. VISCOSIDAD:</strong> 50DIN-S<br>
+            <strong>LONGITUD DEL CABLE DE ALIMENTACIÓN:</strong> 2,0 M<br>
+            <strong>ENVASE DE ALUMINIO:</strong> 800ML<br>
+            <strong>ACCESORIOS:</strong><br>
+            1X TAZA MEDIDORA DE VISCOSIDAD<br>
+        </p>
+        <p class="price">Precio: <span>S/ 128.99</span></p>
+        
+        
+    </div>
+</div>
+<div id="modal46" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal46')">&times;</span>
+        <h2>Detalles de la Pistola de Calor</h2>
+        <p>
+            <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+            <strong>POTENCIA DE ENTRADA:</strong> 2000W<br>
+            <strong>TEMPERATURA:</strong> 50/450°C/550°C<br>
+            <strong>FLUJO DE AIRE:</strong> 450/300/450 L/MIN<br>
+            3 AJUSTES DE TEMPERATURA<br>
+            <strong>INCLUIR:</strong><br>
+            1 BOQUILLA REDUCTORA<br>
+            1 BOQUILLA REFLECTORA<br>
+            1 UDS BOQUILLA PLANA<br>
+            1 UDS RASPADOR<br>
+            EMBALADO POR CAJA DE COLOR<br>
+        </p>
+        <p class="price">Precio: <span>S/ --.--</span></p>
+        
+    </div>
+</div>
+<div id="modal47" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal47')">&times;</span>
+        <h2>Detalles de la Pistola de Calor</h2>
+        <p>
+            <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+            <strong>POTENCIA DE ENTRADA:</strong> 2000W<br>
+            <strong>TEMPERATURA:</strong> 50°C/50-450°C/50-550°C<br>
+            <strong>FLUJO DE AIRE:</strong> 450/300/450 L/MIN<br>
+            TEMPERATURA AJUSTABLE CON RESPALDO GIRATORIO PARA UN CONTROL PRECISO<br>
+            <strong>LONGITUD DEL CABLE:</strong> 2M<br>
+            <strong>INCLUIR:</strong><br>
+            1 BOQUILLA REDUCTORA<br>
+        </p>
+        <p class="price">Precio: <span>S/ --.--</span></p>
+        
+    </div>
+</div>
+<div id="modal48" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal48')">&times;</span>
+        <h2>Detalles de la Pistola de Calor</h2>
+        <p>
+            <strong>VOLTAJE:</strong> 220V-240V~50/60HZ<br>
+            <strong>POTENCIA DE ENTRADA:</strong> 2000W<br>
+            <strong>TEMPERATURA:</strong> 50/50-600°C/50-600°C<br>
+            <strong>FLUJO DE AIRE:</strong> 450/300/450 L/MIN<br>
+            TEMPERATURA AJUSTABLE CON PANTALLA LCD PARA UN CONTROL PRECISO<br>
+            <strong>LONGITUD DEL CABLE:</strong> 2M<br>
+            <strong>INCLUIR:</strong><br>
+            1 BOQUILLA REDUCTORA<br>
+        </p>
+        
+        <p class="price">Precio: <span>S/ 99.99</span></p>
+        
+    </div>
+</div>
+<div id="modal49" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal49')">&times;</span>
+        <h2>Detalles de la Mini Rectificadora</h2>
+        <p>
+            <strong>POTENCIA DE ENTRADA:</strong> 130W<br>
+            <strong>VELOCIDAD SIN CARGA:</strong> 10000-35000 RPM<br>
+            <strong>TAMAÑO DE LA PINZA:</strong> 3,2 MM/2,3 MM<br>
+            CONTROL DE VELOCIDAD VARIABLE<br>
+            CON 1 UDS EJE FLEXIBLE<br>
+            CON 109 UDS. DE ACCESORIOS<br>
+            CON 1 JUEGO DE ESCOBILLAS DE CARBÓN ADICIONALES<br>
+            EMBALADO POR BMC<br>
+        </p>
+        <p class="price">Precio: <span>S/ 84.99</span></p>
+        
+    </div>
+</div>
+<div id="modal50" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal50')">&times;</span>
+        <h2>Detalles de la Rectificadora Recta</h2>
+        <p>
+            <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+            <strong>POTENCIA DE ENTRADA:</strong> 550W<br>
+            <strong>VELOCIDAD SIN CARGA:</strong> 29000 RPM<br>
+            <strong>TAMAÑO DE LA PINZA:</strong> 6MM<br>
+            CAJA DE ENGRANAJES DE ALUMINIO<br>
+            CON 1 JUEGO DE ESCOBILLAS DE CARBÓN ADICIONALES<br>
+            CON 3 PUNTOS MONTADOS<br>
+            EMBALADO POR CAJA DE COLOR<br>
+        </p>
+        
+        <p class="price">Precio: <span>S/ 139.99</span></p>
+        
+    </div>
+</div>
+<div id="modal51" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal51')">&times;</span>
+        <h2>Detalles de la Sopladora Aspiradora</h2>
+        <p>
+            <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+            <strong>POTENCIA DE ENTRADA:</strong> 600W<br>
+            <strong>VELOCIDAD SIN CARGA:</strong> 0-16000 RPM<br>
+            <strong>VELOCIDAD DE SOPLADO:</strong> 0-3,5 M³/MIN<br>
+            CONTROL DE VELOCIDAD VARIABLE<br>
+            <strong>INCLUIR:</strong><br>
+            1 UDS BOLSA PARA EL POLVO<br>
+            EMBALADO POR CAJA DE COLOR<br>
+        </p>
+        <p class="price">Precio: <span>S/ --.--</span></p>
+    </div>
+</div>
+<div id="modal52" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal52')">&times;</span>
+        <h2>Detalles de la Sopladora Aspiradora</h2>
+        <p>
+            <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+            <strong>POTENCIA DE ENTRADA:</strong> 600W<br>
+            <strong>VELOCIDAD SIN CARGA:</strong> 0-16000 RPM<br>
+            <strong>VELOCIDAD DE SOPLADO:</strong> 0-3,5 M³/MIN<br>
+            CONTROL DE VELOCIDAD VARIABLE<br>
+            <strong>INCLUIR:</strong><br>
+            1 UDS BOLSA PARA EL POLVO<br>
+            EMBALADO POR CAJA DE COLOR<br>
+        </p>
+        <p class="price">Precio: <span>S/ --.--</span></p>
+    </div>
+</div>
+<div id="modal53" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal53')">&times;</span>
+        <h2>Detalles de la Sopladora Aspiradora</h2>
+        <p>
+            <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+            <strong>POTENCIA DE ENTRADA:</strong> 800W<br>
+            <strong>VELOCIDAD SIN CARGA:</strong> 0-15000 RPM<br>
+            <strong>VELOCIDAD MÁXIMA DE SOPLADO:</strong> 0-4,5 M3/MIN<br>
+            VELOCIDAD VARIABLE<br>
+            CON 1 UDS BOLSA PARA EL POLVO<br>
+            CON 1 UDS TUBO FLEXIBLE<br>
+            CON 2 UDS BOQUILLAS DE SUCCIÓN<br>
+            EMBALADO POR CAJA DE COLOR<br>
+        </p>
+        <p class="price">Precio: <span>S/ 144.99</span></p>
+        
+    </div>
+</div>
+<div id="modal54" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal54')">&times;</span>
+        <h2>Detalles de la Maquina de Soldar Inversor MMA</h2>
+        <p>
+            <strong>TECNOLOGÍA:</strong> INVERSOR IGBT<br>
+            <strong>VOLTAJE DE ENTRADA (V):</strong> 1 ~ 220-240<br>
+            <strong>FRECUENCIA (HZ):</strong> 50/60<br>
+            <strong>CORRIENTE DE SALIDA (A):</strong> 10-200<br>
+            <strong>CICLO DE TRABAJO (%):</strong> 200A@60%<br>
+            <strong>PANTALLA:</strong> LCD<br>
+            <strong>VOLTAJE SIN CARGA (V):</strong> 70<br>
+            <strong>CORRIENTE DE SALIDA MÁXIMA (A):</strong> 200<br>
+            <strong>DIÁMETRO DEL ELECTRODO (MM):</strong> 1,6-5,0<br>
+        </p>
+        
+        <p class="price">Precio: <span>S/ 539.99</span></p>
+        
+    </div>
+</div>
+<div id="modal55" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal55')">&times;</span>
+        <h2>Detalles del Cargador de Bateria</h2>
+        <p>
+            <strong>VOLTAJE DE ENTRADA (V):</strong> 1 ~ 220-240<br>
+            <strong>FRECUENCIA (HZ):</strong> 50/60<br>
+            <strong>VOLTAJE DE CARGA (V):</strong> 6/12<br>
+            <strong>CORRIENTE NOMINAL (A):</strong> 6<br>
+            <strong>CAPACIDAD DE REFERENCIA (AH):</strong> 40-90<br>
+            <strong>CLASE DE AISLAMIENTO:</strong> H<br>
+            <strong>PESO (KG):</strong> 3,4<br>
+            EMBALADO EN CAJA DE CARTÓN<br>
+        </p>
+        <p class="price">Precio: <span>S/ 154.99</span></p>
+        
+    </div>
+</div>
+<div id="modal56" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal56')">&times;</span>
+        <h2>Detalles de la Perforadora de Concreto</h2>
+        <p>
+            <strong>POTENCIA DE ENTRADA:</strong> 2800W<br>
+            <strong>VELOCIDAD SIN CARGA:</strong> 800 RPM<br>
+            <strong>MÁX. DIÁMETRO DE PERFORACIÓN:</strong> 200 MM<br>
+            <strong>ROSCA DEL HUSILLO:</strong> M22<br>
+            CON SOPORTE DE PERFORACIÓN<br>
+            CON 1 JUEGO DE ESCOBILLAS DE CARBÓN<br>
+            CON INTERRUPTOR DE PROTECCIÓN CONTRA FUGAS<br>
+            EMBALADO EN CAJA DE CARTÓN<br>
+        </p>
+        <p class="price">Precio: <span>S/ 580.99</span></p>
+        
+    </div>
+</div>
+<div id="modal57" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal57')">&times;</span>
+        <h2>Detalles de la Clavadora Neomatica</h2>
+        <p>
+            <strong>CAPACIDAD DE CARGA:</strong> 100 UNIDADES<br>
+            <strong>TAMAÑO DEL CLAVO:</strong> 15-50 MM GA18, 1,25X1,00MM<br>
+            BOQUILLA DE LIBERACIÓN RÁPIDA PARA UNA RÁPIDA ELIMINACIÓN DE ATASCOS<br>
+            CON CONECTOR TIPO EUROPA, CONECTOR TIPO USA, CONECTOR TIPO NITTO Y CONECTOR TIPO ITALIA<br>
+            <strong>PRESIÓN DE FUNCIONAMIENTO:</strong> 0,4-<br>
+        </p>
+        
+        <p class="price">Precio: <span>S/ 109.99</span></p>
+        
+    </div>
+</div>
+<div id="modal58" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal58')">&times;</span>
+        <h2>Detalles de la Llave de Impacto de Aire</h2>
+        <p>
+            <strong>UNIDAD CUADRADA:</strong> 12,5 MM (1/2")<br>
+            <strong>VELOCIDAD SIN CARGA:</strong> 7000 RPM<br>
+            <strong>PAR MÁXIMO:</strong> 610 NM (450 PIES)<br>
+            <strong>PESO:</strong> 2,6 KG<br>
+            MECANISMO DE DOBLE MARTILLO<br>
+            CON CASQUILLO DE 3 PIEZAS (17 MM, 19 MM, 21 MM)<br>
+            CON CONECTOR TIPO EUROPA, CONECTOR TIPO USA, CONECTOR TIPO NITTO Y CONECTOR TIPO ITALIA<br>
+        </p>
+        
+        <p class="price">Precio: <span>S/ 195.99</span></p>
+        
+    </div>
+</div>
+<div id="modal59" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal59')">&times;</span>
+        <h2>Detalles de la Pistola de Alta Presion</h2>
+        <p>
+            <strong>BOQUILLA ESTÁNDAR:</strong> 1,5 MM<br>
+            <strong>ANCHO DEL PATRÓN:</strong> 180-250 MM<br>
+            <strong>CAPACIDAD DE PINTURA:</strong> 400 CC<br>
+            ADECUADO PARA CAPA BASE<br>
+            CON CONECTOR TIPO EUROPA, CONECTOR TIPO USA, CONECTOR TIPO NITTO Y CONECTOR TIPO ITALIA<br>
+            <strong>BOQUILLA OPCIONAL:</strong> 1,2-1,8 MM<br>
+            <strong>PRESIÓN DE FUNCIONAMIENTO:</strong> 3-4BAR<br>
+            <strong>CONTRAS DE AIRE:</strong> 4,2-7,1 CFM<br>
+        </p>
+        <p class="price">Precio: <span>S/ 44.99</span></p>
+    </div>
+</div>
+<div id="modal60" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal60')">&times;</span>
+        <h2>Detalles de la Pistola de Alta Presion</h2>
+        <p>
+            <strong>BOQUILLA ESTÁNDAR:</strong> 1,5 MM<br>
+            <strong>ANCHO DEL PATRÓN:</strong> 180-250 MM<br>
+            <strong>CAPACIDAD DE PINTURA:</strong> 400 CC<br>
+            ADECUADO PARA CAPA BASE<br>
+            CON CONECTOR TIPO EUROPA, CONECTOR TIPO USA, CONECTOR TIPO NITTO Y CONECTOR TIPO ITALIA<br>
+            <strong>BOQUILLA OPCIONAL:</strong> 1,5-2,0 MM<br>
+            <strong>PRESIÓN DE FUNCIONAMIENTO:</strong> 3-4BAR<br>
+            <strong>CONTRAS DE AIRE:</strong> 3,5-6,0 CFM (99-<br>
+        </p>
+        <p class="price">Precio: <span>S/ 49.99</span></p>
+        
+    </div>
+</div>
+<div id="modal61" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal61')">&times;</span>
+        <h2>Detalles de la Pistola de Alta Presion</h2>
+        <p>
+            <strong>BOQUILLA ESTÁNDAR:</strong> 1,5 MM<br>
+            <strong>ANCHO DEL PATRÓN:</strong> 140-180 MM<br>
+            <strong>CAPACIDAD DE PINTURA:</strong> 1000CC<br>
+            ADECUADO PARA CAPA BASE<br>
+            CON CONECTOR TIPO EUROPA, CONECTOR TIPO USA, CONECTOR TIPO NITTO Y CONECTOR TIPO ITALIA<br>
+            <strong>BOQUILLA OPCIONAL:</strong> 1,2-1,8 MM<br>
+            <strong>PRESIÓN DE FUNCIONAMIENTO:</strong> 3-4BAR<br>
+            <strong>CONTRAS DE AIRE:</strong> 4,2-7,1 CFM<br>
+        </p>
+        
+        <p class="price">Precio: <span>S/ --.--</span></p>
+        
+    </div>
+</div>
+<div id="modal62" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal62')">&times;</span>
+        <h2>Detalles de la Pistola de Alta Presion</h2>
+        <p>
+            <strong>BOQUILLA ESTÁNDAR:</strong> 1,8 MM<br>
+            <strong>ANCHO DEL PATRÓN:</strong> 180-250 MM<br>
+            <strong>CAPACIDAD DE PINTURA:</strong> 1000CC<br>
+            <strong>ADECUADO PARA:</strong> CAPA BASE<br>
+            CON CONECTOR TIPO EUROPA, CONECTOR TIPO USA, CONECTOR TIPO NITTO Y CONECTOR TIPO ITALIA.<br>
+            <strong>BOQUILLA OPCIONAL:</strong> 1,5-2,0 MM<br>
+            <strong>PRESIÓN DE FUNCIONAMIENTO:</strong> 3-4BAR<br>
+            <strong>CONSUMO DE AIRE:</strong> 3,5-6,0 CFM <br>
+        </p>
+        <p class="price">Precio: <span>S/ 52.99</span></p>
+    </div>
+</div>
+<div id="modal63" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal63')">&times;</span>
+        <h2>Detalles de la Pistola de Alta Presion</h2>
+        <p>
+            <strong>BOQUILLA ESTÁNDAR:</strong> 1,4 MM<br>
+            <strong>ANCHO DEL PATRÓN:</strong> 180-250 MM<br>
+            <strong>CAPACIDAD DE PINTURA:</strong> 600 CC<br>
+            <strong>ADECUADO PARA:</strong> CAPA DE ACABADO<br>
+            CON CONECTOR TIPO EUROPA, CONECTOR TIPO USA, CONECTOR TIPO NITTO Y CONECTOR TIPO ITALIA.<br>
+            <strong>BOQUILLA OPCIONAL:</strong> 1,3-2,5 MM<br>
+            <strong>PRESIÓN DE FUNCIONAMIENTO:</strong> 2-3,5 BAR<br>
+        </p>
+        <p class="price">Precio: <span>S/ 59.99</span></p>
+        
+    </div>
+</div>
+<div id="modal64" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal64')">&times;</span>
+        <h2>Detalles de la Pistola de Alta Presion</h2>
+        <p>
+            <strong>PISTOLA DE PULVERIZACIÓN DE GRADO SUPERIOR</strong><br>
+            <strong>BOQUILLA ESTÁNDAR:</strong> 1,3 MM<br>
+            <strong>ANCHO DEL PATRÓN:</strong> 180-260 MM<br>
+            <strong>CAPACIDAD DE PINTURA:</strong> 600 CC<br>
+            <strong>ADECUADO PARA:</strong> CAPA DE ACABADO, PROFESIONAL PARA COCHES EN AEROSOL.<br>
+            CON CONECTOR TIPO EUROPA, CONECTOR TIPO USA, CONECTOR TIPO NITTO Y CONECTOR TIPO ITALIA.<br>
+        </p>
+        
+        <p class="price">Precio: <span>S/ 155.99</span></p>
+        
+    </div>
+</div>
+<div id="modal65" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal65')">&times;</span>
+        <h2>Detalles de la Pistola  de lavado</h2>
+        <p>
+            <strong>TAMAÑO DE LA BOQUILLA:</strong> 215 MM<br>
+            <strong>CAPACIDAD DE LAVADO:</strong> 0,75 L<br>
+            CON CONECTOR TIPO EUROPA, CONECTOR TIPO USA, CONECTOR TIPO NITTO Y CONECTOR TIPO ITALIA.<br>
+            <strong>PRESIÓN DE FUNCIONAMIENTO:</strong> 4BAR<br>
+            <strong>EMBALADO EN:</strong> CAJA DE COLOR (UNA CAJA DE COLOR INCLUYE DOS PIEZAS DE TAT20751)<br>
+        </p>
+        <p class="price">Precio: <span>S/ 32.99</span></p>
+    </div>
+</div>
+<div id="modal66" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal66')">&times;</span>
+        <h2>Detalles de la Motosierra</h2>
+        <p>
+            <strong>DESPLAZAMIENTO:</strong> 62 CC<br>
+            <strong>POTENCIA NOMINAL:</strong> 2,4 KW<br>
+            <strong>VELOCIDAD DE RALENTÍ DEL MOTOR:</strong> 3100 ± 300 RPM<br>
+            <strong>MÁX. DIÁMETRO DE CORTE:</strong> 605 MM (24 ")<br>
+            <strong>CAPACIDAD DEL DEPÓSITO DE COMBUSTIBLE:</strong> 550 ML<br>
+            <strong>CAPACIDAD DEL TANQUE DE ACEITE:</strong> 260 ML<br>
+            <strong>POTENTE MOTOR:</strong> DE 2 TIEMPOS<br>
+            <strong>CADENA:</strong> DE 24" (TGTSC52401)<br>
+        </p>
+        <p class="price">Precio: <span>S/ 579.99</span></p>
+        
+    </div>
+</div>
+<div id="modal67" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal67')">&times;</span>
+        <h2>Detalles de la Espada de Motosierra</h2>
+        <p>
+            <strong>BARRA DE MOTOSIERRA DE:</strong> 24"<br>
+            <strong>ADECUADO PARA:</strong> MOTOSIERRA DE GASOLINA TG5602411.<br>
+            <strong>EMBALADO EN:</strong> DOBLE BLISTE<br>
+        </p>
+        <p class="price">Precio: <span>S/ 69.99</span></p>
+        
+        
+    </div>
+</div>
+<div id="modal68" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal68')">&times;</span>
+        <h2>Detalles de la Hidrolavadora de Alta Presion</h2>
+        <p>
+            <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+            MOTOR DE ESCOBILLAS DE CARBÓN<br>
+            ALAMBRE DE COBRE PURO<br>
+            <strong>POTENCIA DE ENTRADA:</strong> 1400W<br>
+            <strong>PRESIÓN MÁXIMA:</strong> 130 BAR (1900 PSI)<br>
+            <strong>CAUDAL:</strong> 5,5 L/MIN.<br>
+            SISTEMA DE PARADA AUTOMÁTICA<br>
+            1 JUEGO DE PISTOLA ROCIADORA DE AGUA (TGTSG026)<br>
+            MANGUERA DE ALTA PRESIÓN DE 5 M (TGTHPH526)<br>
+        </p>
+        <p class="price">Precio: <span>S/ 239.99</span></p>
+        
+    </div>
+</div>
+<div id="modal69" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal69')">&times;</span>
+        <h2>Detalles de la Hidrolavadora de Alta Presion</h2>
+        <p>
+            <strong>VOLTAJE:</strong> 220-240V~50/60HZ<br>
+            MOTOR DE ESCOBILLAS DE CARBÓN<br>
+            ALAMBRE DE COBRE PURO<br>
+            <strong>POTENCIA DE ENTRADA:</strong> 1800W<br>
+            <strong>PRESIÓN MÁXIMA:</strong> 150 BAR (2200 PSI)<br>
+            <strong>CAUDAL:</strong> 6,0 L/MIN.<br>
+            SISTEMA DE PARADA AUTOMÁTICA<br>
+            1 UDS BOTELLA DE JABÓN<br>
+            1 JUEGO DE PISTOLA ROCIADORA DE AGUA (TGTSG026)<br>
+            MANGUERA DE ALTA PRESIÓN DE 5<br>
+        </p>
+        
+        <p class="price">Precio: <span>S/ 369.99</span></p>
+        
+    </div>
+</div>
+<div id="modal70" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal70')">&times;</span>
+        <h2>Detalles de la Pistola para Lavadora de Alta Presion</h2>
+        <p>
+            <strong>MATERIAL:</strong> CUERPO DE PLÁSTICO<br>
+            <strong>ADECUADO PARA:</strong> TGT11316, TGT11356, TGT11226, TGT11246, UTGT11316, UT GT11356 Y UTGT11226<br>
+            <strong>EMBALADO EN:</strong> CAJA DE CARTÓN<br>
+        </p>
+        <p class="price">Precio: <span>S/ 59.99</span></p>
+    </div>
+</div>
+<div id="modal71" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal71')">&times;</span>
+        <h2>Detalles del Cepillo para Lavadora de Alta Presion</h2>
+        <p>
+            <strong>TAMAÑO:</strong> 250MM<br>
+            <strong>MATERIAL:</strong> PP Y PA66+30GF<br>
+            CON UNA VARILLA DE EXTENSIÓN DE 455 MM.<br>
+            <strong>ADECUADO PARA:</strong> TGTSG026<br>
+            <strong>EMBALADO CON:</strong> TARJETA DE PAPEL<br>
+        </p>
+        <p class="price">Precio: <span>S/ 46.99</span></p>
+        
+    </div>
+</div>
+<div id="modal72" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal72')">&times;</span>
+        <h2>Detalles de la Boquilla de Espuma de Jabón Shampoo para Hidrolavadora</h2>
+        <p>
+            <strong>CAPACIDAD:</strong> 400 ML<br>
+            CON FUNCIÓN AJUSTABLE<br>
+            <strong>ADECUADO PARA:</strong> TGTSG026<br>
+            <strong>DIMENSIONES:</strong> 125*85*196MM<br>
+            <strong>EMBALADO POR:</strong> ETIQUETA<br>
+        </p>
+        <p class="price">Precio: <span>S/ 24.99</span></p>
+    </div>
+</div>
+<div id="modal73" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal73')">&times;</span>
+        <h2>Detalles de la Manguera para Lavadora de Alta Presion</h2>
+        <p>
+            <strong>LONGITUD:</strong> 5 METROS<br>
+            <strong>MATERIAL:</strong> PVC<br>
+            <strong>COMBINA CON LA MAQUINARIA DE:</strong> TGT11316, TGT11356, TGT11226, UTGT11316, UTGT11356<br>
+            <strong>EMBALADO EN:</strong> CAJA DE CARTÓN<br>
+        </p>
+        
+        <p class="price">Precio: <span>S/ 36.99</span></p>
+        
+        
+    </div>
+</div>
+<div id="modal74" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal74')">&times;</span>
+        <h2>Detalles del casco de Seguridad Azul</h2>
+        <p>
+            <strong>CARCASA DE:</strong> PE CON VENTILACIONES<br>
+            <strong>MATERIAL DE REVESTIMIENTO:</strong> PLÁSTICO<br>
+            CORREA PARA LA BARBILLA INCLUIDA<br>
+            <strong>COLOR:</strong> AZUL<br>
+            <strong>PESO:</strong> 330G<br>
+            <strong>SUSPENSIÓN DE:</strong> 8 PUNTOS<br>
+            AJUSTAR EL TAMAÑO DE LA CABEZA MEDIANTE HEBILLA<br>
+        </p>
+        
+        <p class="price">Precio: <span>S/ 09.99</span></p>
+        
+        
+    </div>
+</div>
+<div id="modal75" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal75')">&times;</span>
+        <h2>Detalles de la Careta Transparente Industrial</h2>
+        <p>
+            <strong>VISERA:</strong> RESISTENTE A IMPACTOS<br>
+            EL ALA PROTEGE LA FRENTE DE LESIONES EXTERNAS.<br>
+            <strong>ARNÉS CON:</strong> PERILLAS AJUSTABLES, CON BANDA ANTIBACTERIANA<br>
+            <strong>EMBALADO POR:</strong> ETIQUETA<br>
+        </p>
+        <p class="price">Precio: <span>S/ 12.99</span></p>
+    </div>
+</div>
+<div id="modal76" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal76')">&times;</span>
+        <h2>Detalles del Juego de Fresas para Router</h2>
+        <p>
+            <strong>JUEGO DE FRESAS PARA ROUTER</strong><br>
+            <strong>12 PCS</strong><br>
+            <ul>
+                <li><strong>Fresas Rectas:</strong> D6MM, D12MM, D16MM</li>
+                <li><strong>Fresa de 90° V-Groove:</strong> 1/2"</li>
+                <li><strong>Fresa Cola de Milano:</strong> 1/2"</li>
+                <li><strong>Fresa Bisel de 45°:</strong> 32MM</li>
+                <li><strong>Fresa con Rodamiento para Corte al Ras:</strong> 1/2"</li>
+                <li><strong>Fresa Core Box:</strong> 1/4"</li>
+                <li><strong>2 Fresas Redondeadas:</strong> 1/4", 3/8"</li>
+                <li><strong>Fresa Core:</strong> 1/4"</li>
+                <li><strong>Fresa Roman Ogee:</strong> R-4</li>
+            </ul>
+        </p>
+        <p class="price">Precio: <span>S/ --.--</span></p>
+        
+    </div>
+</div>
+    <!-- Enlace al archivo JavaScript -->
+    <script src="productos.js"></script>
+
+       <!-- Footer -->
+       <footer>
+        <p>© 2024 J&M Gutiérrez. Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://wa.me/51960604850" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+    
+</body>
+</html>

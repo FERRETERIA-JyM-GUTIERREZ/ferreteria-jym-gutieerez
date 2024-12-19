@@ -1,0 +1,641 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background: url('img_inicio/obrero.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    /* Quitar overflow:hidden para permitir scroll */
+}
+/* ====== Header ====== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #fa8c32, #fa6a46);
+    padding: 10px 20px;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo e Información */
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espacio entre la imagen y el texto */
+}
+
+header .logo-image {
+    width: 220px; /* Tamaño ajustado de la imagen */
+    height: auto;
+}
+
+header .logo-text {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+header .sub-text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+/* Input y Menú de Navegación */
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre el input y el menú */
+}
+
+header input[type="text"] {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    width: 200px;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffe8d6;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header input[type="text"] {
+        width: 90%;
+    }
+
+    header .logo {
+        flex-direction: column;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: rgba(51, 51, 51, 0.9);
+    color:#fff;
+    padding:20px;
+    text-align:center;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+footer p {
+    margin:0;
+    font-size:14px;
+}
+footer .social-icons {
+    display:flex;
+    gap:10px;
+}
+footer .social-icons a {
+    color: #f3ff44;
+    font-size:18px;
+    text-decoration:none;
+    transition:color 0.3s;
+}
+footer .social-icons a:hover {
+    color:#fff;
+}
+
+/* Sección Sobre Nosotros */
+.about-us {
+    padding:50px 20px;
+    background-color:#f8faf8;
+    color:#333;
+    text-align:center;
+}
+.about-us h2 {
+    font-size:40px;
+    margin-bottom:20px;
+    color:#fa6a46;
+    /* El texto de "Sobre Nosotros" ya está horizontal por defecto */
+}
+
+/* Contenedores */
+.about-content {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+    align-items:center;
+    justify-items:center;
+    max-width:1200px;
+    margin:0 auto;
+}
+.about-text, .about-image {
+    background:#fff;
+    padding:30px;
+    text-align:left;
+    border-radius:8px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+.about-text ul {
+    list-style:none;
+    padding:0;
+}
+.about-text ul li {
+    margin:10px 0;
+    font-size:18px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+.about-text ul li::before {
+    content:"✔";
+    color:#2a9d8f;
+    font-size:20px;
+}
+.about-image img {
+    max-width:100%;
+    height:auto;
+    border-radius:10px;
+    box-shadow:0 5px 20px rgba(254,103,16,0.2);
+}
+
+.vision-mission {
+    display: grid;
+    /* Ajuste dinámico de columnas usando auto-fit y minmax */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+/* Opcionalmente, ajustar el tamaño del texto e imágenes en pantallas pequeñas */
+@media (max-width:360px) {
+    .vision, .mission {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
+.vision, .mission {
+    background: linear-gradient(45deg,#f4a261,#860843);
+    padding:20px;
+    border-radius:8px;
+    color:#fff;
+}
+.vision h3, .mission h3 {
+    margin-top:0;
+    font-size:24px;
+    text-align:center;
+}
+.vision p, .mission p {
+    margin:10px 0 0;
+    text-align:justify;
+    background:#fff5f0;
+    padding:10px;
+    border-radius:6px;
+    color:#333;
+}
+
+/* Fondo de humo */
+.smoke-background {
+    position:fixed;
+    top:0; left:0;
+    width:100%; height:100%;
+    z-index:1000;
+    pointer-events:none;
+    overflow:hidden;
+}
+.bubble {
+    position:absolute;
+    bottom:-50px;
+    width:20px;
+    height:20px;
+    background:radial-gradient(circle, rgba(255,200,124,0.7), rgba(255,130,90,0.5), rgba(255,90,60,0.2));
+    border-radius:50%;
+    filter:blur(6px);
+    opacity:0.7;
+    animation:float-up 8s infinite ease-in-out;
+}
+@keyframes float-up {
+    0% {transform:translateY(0) translateX(0) scale(1);opacity:0.8;}
+    50% {transform:translateY(-50vh) translateX(20px) scale(1.2);opacity:0.5;}
+    100% {transform:translateY(-100vh) translateX(-20px) scale(1);opacity:0;}
+}
+
+/* Responsividad Header */
+@media (max-width:768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .logo-image {
+        width: 330px;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width:360px) {
+    header .logo-image {
+        width: 160px;
+    }
+
+    header .logo-text {
+        font-size: 24px;
+    }
+
+    header .sub-text {
+        font-size: 14px;
+    }
+
+    header input[type="text"] {
+        width: 100%;
+        font-size: 12px;
+    }
+}
+
+/* Responsividad Sección Nosotros */
+/* Al hacer una sola columna en pantallas pequeñas, la imagen quedará debajo del texto */
+@media (max-width:768px) {
+    .about-content {
+        grid-template-columns: 1fr; /* Una sola columna, texto arriba, imagen abajo */
+    }
+}
+
+@media(max-width:360px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-text, .about-image, .vision, .mission {
+        padding:10px;
+        font-size:12px;
+    }
+
+    .about-us h2 {
+        font-size:24px;
+    }
+
+    /* Mantener la imagen pequeña en pantallas muy pequeñas */
+    .about-image img {
+        width:80px;
+        height:80px;
+        object-fit:contain;
+    }
+}
+header .logo-image {
+    width: 160px; /* Reducir un poco más el logo */
+}
+
+header .logo-text {
+    font-size: 20px; /* Letra más pequeña para que quepa el nombre completo */
+    line-height: 1.2; /* Ajustar el espacio vertical si es necesario */
+}
+
+header .sub-text {
+    font-size: 12px; /* También reducir el subtítulo si es necesario */
+}
+
+@media(max-width:360px) {
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center; /* Centra el contenido horizontalmente */
+    }
+
+    header nav input[type="text"] {
+        width: 200px; /* Ajusta el ancho según prefieras */
+        max-width: 80%; /* O un porcentaje para mayor flexibilidad */
+    }
+
+    header nav ul {
+        flex-direction: row;
+        gap: 4px;
+        align-items: center; /* Centrar también la lista */
+    }
+}
+
+
+/* A partir de 360px, el menú se alinea de forma horizontal */
+@media (min-width:360px) {
+    header nav ul {
+        flex-direction: row;
+        gap: 9px; /* Ajustar el espacio entre elementos  */
+    }
+}
+
+
+@media(min-width:361px) and (max-width:768px) {
+    /* Puedes mantener una columna si deseas que la imagen quede debajo del texto */
+    .about-content {
+        grid-template-columns: 1fr; 
+    }
+
+    .about-text, .about-image, .vision, .mission {
+        padding:10px;
+        font-size:12px;
+    }
+
+    .about-us h2 {
+        font-size:28px;
+    }
+    header nav ul {
+        flex-direction: row;
+        gap: 12px; /* Ajustar el espacio entre elementos  */
+    }
+    /* Hacer la imagen un poco más grande en este rango */
+    .about-image img {
+        width:300px; /* Un tamaño mayor que 70px */
+        height:auto;
+        object-fit:contain;
+    }
+    header .logo-image {
+        width: 125px; /* Tamaño ajustado de la imagen */
+        height: auto;
+    }
+
+}
+
+
+/* Entre 509px y 1000px */
+@media (min-width: 800px) and (max-width: 1200px) {
+    /* ====== Header ====== */
+    header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 30px; /* Aumentar padding para más espacio */
+        background: linear-gradient(to right, #fa8c32, #fa6a46); /* Mantener consistencia */
+    }
+
+    /* Logo ajustes */
+    header .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Reducir espacio entre imagen y texto */
+        flex: 1; /* Permitir que el logo ocupe el espacio necesario */
+    }
+
+    header .logo-image {
+        width: 180px; /* Reducir el tamaño del logo */
+        height: auto;
+    }
+
+    header .logo-text {
+        font-size: 20px; /* Reducir tamaño de fuente */
+    }
+
+    header .sub-text {
+        font-size: 12px; /* Reducir tamaño de fuente */
+    }
+
+    /* Navegación ajustes */
+    header nav {
+        display: flex;
+        align-items: center;
+        gap: 20px; /* Espacio entre elementos de navegación */
+        flex: 2; /* Permitir que la navegación ocupe más espacio */
+    }
+
+    header nav input[type="text"] {
+        width: 250px; /* Aumentar ancho del campo de búsqueda */
+        padding: 8px 12px; /* Mejorar padding para usabilidad */
+        font-size: 14px; /* Aumentar tamaño de fuente */
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 25px; /* Mantener el espacio entre elementos */
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav ul li a {
+        font-size: 16px; /* Aumentar tamaño de fuente para mejor legibilidad */
+    }
+
+    /* ====== Sección Sobre Nosotros ====== */
+    .about-content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 20px; /* Aumentar padding para mejor espaciamiento */
+    }
+
+    .about-text, .about-image, .vision, .mission {
+        padding: 15px; /* Aumentar padding */
+        font-size: 14px; /* Aumentar tamaño de fuente */
+        line-height: 1.6; /* Mejorar la legibilidad */
+    }
+
+    .about-us h2 {
+        font-size: 28px;
+        margin-bottom: 20px; /* Aumentar margen inferior */
+    }
+
+    .about-image img {
+        width: 100%; /* Asegurar que la imagen ocupe todo el contenedor */
+        max-width: 240px; /* Limitar el tamaño máximo */
+        height: auto;
+        object-fit: contain;
+        border-radius: 8px; /* Añadir bordes redondeados */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra para profundidad */
+    }
+
+    .vision, .mission {
+        background: linear-gradient(45deg, #f4a261, #860843);
+        padding: 20px;
+        border-radius: 8px;
+        color: #fff;
+    }
+
+    .vision p, .mission p {
+        background: #fff5f0;
+        color: #333;
+    }
+}
+
+
+
+
+/* ====== Efecto de Nieve ====== */
+
+/* Contenedor de nieve */
+.snowflakes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Permite interactuar con los elementos debajo */
+    z-index: 9999; /* Asegura que la nieve esté sobre otros elementos */
+    overflow: hidden;
+}
+
+/* Estilos para cada copo de nieve */
+.snowflake {
+    color: #FFF;
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 0 0 1px #000;
+    position: absolute;
+    top: -10%;
+    user-select: none;
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* Animación de caída */
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* ====== Mensaje Flotante Animado ====== */
+
+/* Contenedor del mensaje flotante */
+.floating-message {
+    position: fixed;
+    bottom: 20px; /* Ajusta según preferencia */
+    right: 20px;  /* Ajusta según preferencia */
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 10000; /* Asegura que el mensaje esté sobre la nieve */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Animación de pulso */
+    animation: pulse 2s infinite;
+}
+
+/* Animación de pulso para el cuadro */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(255, 215, 0, 1);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+    }
+}
+
+/* Texto del mensaje con animación de color */
+.floating-message .message-text {
+    background: linear-gradient(45deg, #ff6a00, #ee0979, #00d4ff, #ee0979, #ff6a00);
+    background-size: 600% 600%;
+    -webkit-background-clip: text;
+    background-clip: text; /* Para navegadores modernos */
+    -webkit-text-fill-color: transparent;
+    /* No uses 'text-fill-color' sin prefijo ya que no es estándar */
+    animation: gradientShift 10s ease infinite, textGlow 2s infinite alternate;
+    font-size: 20px; /* Ajusta el tamaño según preferencia */
+    font-weight: bold;
+}
+
+/* Animación para el desplazamiento del gradiente */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Animación para el brillo del texto */
+@keyframes textGlow {
+    from {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    to {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+}
+
+/* ====== Responsividad para el Mensaje Flotante ====== */
+
+@media screen and (max-width: 768px) {
+    .floating-message {
+        bottom: 10px;
+        right: 10px;
+        padding: 15px 20px;
+    }
+
+    .floating-message .message-text {
+        font-size: 16px; /* Ajusta el tamaño del texto en pantallas pequeñas */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .floating-message {
+        bottom: 5px;
+        right: 5px;
+        padding: 10px 15px;
+    }
+
+    .floating-message .message-text {
+        font-size: 14px; /* Ajusta el tamaño del texto en pantallas muy pequeñas */
+    }
+}
+
+/* Clase para ocultar elementos */
+.hidden {
+    display: none !important;
+}
